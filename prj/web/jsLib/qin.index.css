@@ -1,0 +1,59 @@
+.labelFont
+{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: black;
+}
+
+/*注册页面描述样式*/
+.register_td_description
+{
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+/*注册页面标题样式*/
+.register_td_title
+{
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color: #909;
+    font-weight: bold;
+}
+
+.register_td_captain
+{
+    font-family: 微软雅黑;
+    font-size: 60px;
+    color: #d58512;
+    font-weight: bold;
+}
+
+/*表格中的字体全部居中*/
+tr
+{
+    text-align: center;
+}
+
+/**下拉框控件样式*/
+select
+{
+    width: 80%;
+    font-family: 微软雅黑;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

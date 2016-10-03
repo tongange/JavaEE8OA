@@ -1,0 +1,154 @@
+===========================index.jsp===========================
+
+   <%--
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!-- <li class="active"><a href="#">Link</a></li> -->
+                    <!-- <li><a href="#">Link</a></li> -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+            --%>
+
+
+              <!--
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            -->
+
+
+<!--
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid" style="height: 70px; margin-top: 1%;margin-bottom: 1%;">
+<div class="navbar-header">
+<a class="navbar-brand" style="font-family: 微软雅黑; font-size: 50px; color: #c7254e;">
+welcome!javaee8oa大项目
+</a>
+</div>
+</div>
+</nav>
+
+<div class="list-group" style="margin-right: 80%;margin-left: 1%;">
+<a class="list-group-item active"
+style="font-family: 微软雅黑; font-size: 20px; color: #f5f5f5; font-weight: bold; font-style: italic">系统管理</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #ac2925">用户管理</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #080808">岗位管理</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #c7254e">电子公章</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #985f0d">招聘人员管理</a>
+<a class="list-group-item active"
+style="font-family: 微软雅黑; font-size: 20px; color: #f5f5f5; font-weight: bold; font-style: italic">行政管理</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #1b6d85">会议管理</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #3c763d">员工管理</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #31b0d5">员工电脑软件管理</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #122b40">员工项目管理</a>
+<a class="list-group-item active"
+style="font-family: 微软雅黑; font-size: 20px; color: #f5f5f5; font-weight: bold; font-style: italic">关于</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #111111">java8新特性</a>
+<a class="list-group-item list-group-item-success"
+style="font-family: 微软雅黑; font-size: 20px; color: #a94442">关于此项目</a>
+</div>
+-->
+
+
+===========================index.jsp===========================
+
+==================UserDAOImpl
+        /*
+        List<String> countryNames = getSessionFactory()
+                  .openSession()
+                  .createQuery("select c.country_name from Country c")
+                  .list();
+        if (countryNames.size() < 1)
+        {
+            throw new JavaEE6Exception("国家为空!");
+        }
+        else
+        {
+            countryNames.forEach
+                      (
+                                e ->
+                                {
+                                    //数字(key)
+                                    int keyStart = e.lastIndexOf('+');
+                                    //截取最后一个)的值
+                                    int keyEnd = e.lastIndexOf(')');
+                                    int keyNumber = Integer.valueOf(e.substring(keyStart + 1, keyEnd));
+                                    //国家名称(value)
+                                    int valueStart = e.lastIndexOf("(+");
+                                    String valueName = e.substring(0, valueStart);
+                                    result.put(keyNumber, valueName);
+                                }
+                      );
+        }
+        */
+==================UserDAOImpl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

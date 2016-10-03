@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="prj:war exploded">
+    <output-path>$PROJECT_DIR$/../../output/javaee8/prj</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="prj/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="prj" />
+          <element id="module-output" name="hibernate-controller" />
+          <element id="module-output" name="hibernate-dao" />
+          <element id="module-output" name="hibernate-domain" />
+          <element id="module-output" name="hibernate-service" />
+          <element id="module-output" name="javaee8-core" />
+          <element id="module-output" name="javaee8-hibernate" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="libs" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

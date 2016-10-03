@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="hibernate-controller:ear exploded">
+    <output-path>$PROJECT_DIR$/../../output/javaee8/javaee8-hibernate-controller</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="hibernate-controller/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

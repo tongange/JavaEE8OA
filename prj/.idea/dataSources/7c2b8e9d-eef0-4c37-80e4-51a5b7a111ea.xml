@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Oracle - @192.168.0.105">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="3.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="OYJR_RZHX">
+      <object-id>91</object-id>
+      <created-timestamp>2016-09-15.16:46:19</created-timestamp>
+      <modified-timestamp>2016-09-30.15:38:08</modified-timestamp>
+      <visible>1</visible>
+      <introspection-timestamp>2016-10-03.14:20:46</introspection-timestamp>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <object-id>1</object-id>
+    </schema>
+    <schema id="4" parent="1" name="SYS"/>
+    <schema id="5" parent="1" name="SYSTEM">
+      <object-id>5</object-id>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <object-id>9</object-id>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <object-id>14</object-id>
+    </schema>
+    <schema id="8" parent="1" name="ORACLE_OCM">
+      <object-id>21</object-id>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <object-id>30</object-id>
+    </schema>
+    <schema id="10" parent="1" name="APPQOSSYS">
+      <object-id>31</object-id>
+    </schema>
+    <schema id="11" parent="1" name="WMSYS">
+      <object-id>32</object-id>
+    </schema>
+    <schema id="12" parent="1" name="EXFSYS">
+      <object-id>42</object-id>
+    </schema>
+    <schema id="13" parent="1" name="CTXSYS">
+      <object-id>43</object-id>
+    </schema>
+    <schema id="14" parent="1" name="XDB">
+      <object-id>45</object-id>
+    </schema>
+    <schema id="15" parent="1" name="ANONYMOUS">
+      <object-id>46</object-id>
+    </schema>
+    <schema id="16" parent="1" name="ORDSYS">
+      <object-id>53</object-id>
+    </schema>
+    <schema id="17" parent="1" name="ORDDATA">
+      <object-id>54</object-id>
+    </schema>
+    <schema id="18" parent="1" name="ORDPLUGINS">
+      <object-id>55</object-id>
+    </schema>
+    <schema id="19" parent="1" name="SI_INFORMTN_SCHEMA">
+      <object-id>56</object-id>
+    </schema>
+    <schema id="20" parent="1" name="MDSYS">
+      <object-id>57</object-id>
+    </schema>
+    <schema id="21" parent="1" name="OLAPSYS">
+      <object-id>61</object-id>
+    </schema>
+    <schema id="22" parent="1" name="MDDATA">
+      <object-id>65</object-id>
+    </schema>
+    <schema id="23" parent="1" name="SPATIAL_WFS_ADMIN_USR">
+      <object-id>67</object-id>
+    </schema>
+    <schema id="24" parent="1" name="SPATIAL_CSW_ADMIN_USR">
+      <object-id>70</object-id>
+    </schema>
+    <schema id="25" parent="1" name="SYSMAN">
+      <object-id>72</object-id>
+    </schema>
+    <schema id="26" parent="1" name="MGMT_VIEW">
+      <object-id>74</object-id>
+    </schema>
+    <schema id="27" parent="1" name="FLOWS_FILES">
+      <object-id>75</object-id>
+    </schema>
+    <schema id="28" parent="1" name="APEX_PUBLIC_USER">
+      <object-id>76</object-id>
+    </schema>
+    <schema id="29" parent="1" name="APEX_030200">
+      <object-id>78</object-id>
+    </schema>
+    <schema id="30" parent="1" name="OWBSYS">
+      <object-id>79</object-id>
+    </schema>
+    <schema id="31" parent="1" name="OWBSYS_AUDIT">
+      <object-id>83</object-id>
+    </schema>
+    <schema id="32" parent="1" name="SCOTT">
+      <object-id>84</object-id>
+    </schema>
+    <schema id="33" parent="1" name="HR">
+      <object-id>85</object-id>
+    </schema>
+    <schema id="34" parent="1" name="OE">
+      <object-id>86</object-id>
+    </schema>
+    <schema id="35" parent="1" name="IX">
+      <object-id>87</object-id>
+    </schema>
+    <schema id="36" parent="1" name="SH">
+      <object-id>88</object-id>
+    </schema>
+    <schema id="37" parent="1" name="PM">
+      <object-id>89</object-id>
+    </schema>
+    <schema id="38" parent="1" name="BI">
+      <object-id>90</object-id>
+    </schema>
+    <schema id="39" parent="1" name="XS$NULL">
+      <object-id>2147483638</object-id>
+    </schema>
+    <table id="40" parent="2" name="QIN_CUSTOMERS">
+      <object-id>76939</object-id>
+      <created-timestamp>2016-09-26.18:51:57</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:57</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="41" parent="2" name="QIN_EMPLOYEES">
+      <object-id>76947</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="42" parent="2" name="QIN_PRODUCT_TYPES">
+      <object-id>76941</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="43" parent="2" name="QIN_PRODUCTS">
+      <object-id>76943</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="44" parent="2" name="QIN_PURCHASES">
+      <object-id>76945</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="45" parent="2" name="QIN_SALARY_GRADES">
+      <object-id>76949</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="46" parent="2" name="QIN_SOFT_OPENWAYS6">
+      <object-id>76629</object-id>
+      <created-timestamp>2016-09-15.16:46:19</created-timestamp>
+      <modified-timestamp>2016-09-15.16:46:19</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="47" parent="2" name="QIN_SOFT_TYPE6">
+      <object-id>76631</object-id>
+      <created-timestamp>2016-09-15.16:46:20</created-timestamp>
+      <modified-timestamp>2016-09-15.16:46:20</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="48" parent="2" name="QIN_SOFTWARE6">
+      <object-id>76633</object-id>
+      <created-timestamp>2016-09-15.16:46:20</created-timestamp>
+      <modified-timestamp>2016-09-24.15:33:04</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="49" parent="2" name="TONGANGE_COUNTRY8">
+      <object-id>76954</object-id>
+      <created-timestamp>2016-09-30.15:38:07</created-timestamp>
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="50" parent="2" name="TONGANGE_USER8">
+      <object-id>76956</object-id>
+      <created-timestamp>2016-09-30.15:38:07</created-timestamp>
+      <modified-timestamp>2016-09-30.15:38:08</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="51" parent="2" name="TONGANGE_USERTYPE8">
+      <object-id>76958</object-id>
+      <created-timestamp>2016-09-30.15:38:07</created-timestamp>
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <column id="52" parent="40" name="CUSTOMER_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="53" parent="40" name="FIRST_NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="54" parent="40" name="LAST_NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="55" parent="40" name="DOB">
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="56" parent="40" name="PHONE">
+      <data-type>VARCHAR2(12)|0</data-type>
+    </column>
+    <index id="57" parent="40" name="QCUSTOMERS_PK">
+      <object-id>76940</object-id>
+      <created-timestamp>2016-09-26.18:51:57</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:57</modified-timestamp>
+      <columns>CUSTOMER_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="58" parent="40" name="QCUSTOMERS_PK">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>CUSTOMER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>QCUSTOMERS_PK</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="59" parent="41" name="EMPLOYEE_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="60" parent="41" name="MANAGER_ID">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="61" parent="41" name="FIRST_NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="62" parent="41" name="LAST_NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="63" parent="41" name="TITLE">
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="64" parent="41" name="SALARY">
+      <data-type>NUMBER(6)|0</data-type>
+    </column>
+    <index id="65" parent="41" name="EMPLOYEES_PK">
+      <object-id>76948</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>EMPLOYEE_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="66" parent="41" name="EMPLOYEES_PK">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>EMPLOYEE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>EMPLOYEES_PK</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="67" parent="42" name="PRODUCT_TYPE_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="68" parent="42" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <index id="69" parent="42" name="QPRODUCT_TYPE_ID">
+      <object-id>76942</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>PRODUCT_TYPE_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="70" parent="42" name="QPRODUCT_TYPE_ID">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>PRODUCT_TYPE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>QPRODUCT_TYPE_ID</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="71" parent="43" name="PRODUCT_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="72" parent="43" name="PRODUCT_TYPE_ID">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="73" parent="43" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="74" parent="43" name="DESCRIPTION">
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="75" parent="43" name="PRICE">
+      <data-type>NUMBER(5,2)|0</data-type>
+    </column>
+    <index id="76" parent="43" name="QPRODUCTS_PK">
+      <object-id>76944</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>PRODUCT_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="77" parent="43" name="QPRODUCTS_PK">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>PRODUCT_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>QPRODUCTS_PK</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="78" parent="43" name="QPRODUCTS_FK_PRODUCTS_TYPE">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>PRODUCT_TYPE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.QIN_PRODUCT_TYPES.QPRODUCT_TYPE_ID</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="79" parent="44" name="PRODUCT_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="80" parent="44" name="CUSTOMER_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="81" parent="44" name="QUANTITY">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="82" parent="44" name="QIN_PURCHASES">
+      <object-id>76946</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>PRODUCT_ID
+CUSTOMER_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="83" parent="44" name="QIN_PURCHASES">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>PRODUCT_ID
+CUSTOMER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>QIN_PURCHASES</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="84" parent="44" name="PURCHASES_FK_PRODUCTS">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>PRODUCT_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.QIN_PRODUCTS.QPRODUCTS_PK</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="85" parent="44" name="PURCHASES_FK_CUSTOMERS">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>CUSTOMER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.QIN_CUSTOMERS.QCUSTOMERS_PK</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="86" parent="45" name="SALARY_GRADE_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="87" parent="45" name="LOW_SALARY">
+      <data-type>NUMBER(6)|0</data-type>
+    </column>
+    <column id="88" parent="45" name="HIGH_SALARY">
+      <data-type>NUMBER(6)|0</data-type>
+    </column>
+    <index id="89" parent="45" name="SALARY_GRADE_PK">
+      <object-id>76950</object-id>
+      <created-timestamp>2016-09-26.18:51:58</created-timestamp>
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>SALARY_GRADE_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="90" parent="45" name="SALARY_GRADE_PK">
+      <modified-timestamp>2016-09-26.18:51:58</modified-timestamp>
+      <columns>SALARY_GRADE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SALARY_GRADE_PK</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="91" parent="46" name="SOFT_OPEN_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="92" parent="46" name="SOFT_OPENWAYS">
+      <comment>软件打开方式名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <index id="93" parent="46" name="SYS_C0012721">
+      <name-surrogate>1</name-surrogate>
+      <object-id>76630</object-id>
+      <created-timestamp>2016-09-15.16:46:20</created-timestamp>
+      <modified-timestamp>2016-09-15.16:46:20</modified-timestamp>
+      <columns>SOFT_OPEN_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="94" parent="46" name="SYS_C0012721">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-09-15.16:46:20</modified-timestamp>
+      <columns>SOFT_OPEN_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0012721</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="95" parent="47" name="SOFT_TYPE_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="96" parent="47" name="SOFT_TYPE_NAME">
+      <comment>软件类型名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <index id="97" parent="47" name="SYS_C0012724">
+      <name-surrogate>1</name-surrogate>
+      <object-id>76632</object-id>
+      <created-timestamp>2016-09-15.16:46:20</created-timestamp>
+      <modified-timestamp>2016-09-15.16:46:20</modified-timestamp>
+      <columns>SOFT_TYPE_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="98" parent="47" name="SYS_C0012724">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-09-15.16:46:20</modified-timestamp>
+      <columns>SOFT_TYPE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0012724</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="99" parent="48" name="SOFT_ID">
+      <comment>软件编号 主键</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+      <default-expression>NULL</default-expression>
+    </column>
+    <column id="100" parent="48" name="SOFT_NAME">
+      <comment>软件名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="101" parent="48" name="SOFT_DESCRIPTION">
+      <comment>软件描述</comment>
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="102" parent="48" name="SOFT_ISHIDDEN">
+      <comment>软件是否隐藏[0:否, 1:是]</comment>
+      <data-type>NUMBER(1)|0</data-type>
+    </column>
+    <column id="103" parent="48" name="SOFT_CREATETIME">
+      <comment>软件创建时间</comment>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="104" parent="48" name="SOFT_LOCATION">
+      <comment>软件所在位置</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(300)|0</data-type>
+    </column>
+    <column id="105" parent="48" name="SOFT_SIZE">
+      <comment>软件大小(xMB) x只能是数字</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(90)|0</data-type>
+    </column>
+    <column id="106" parent="48" name="SOFT_TYPE">
+      <comment>软件类型 外键</comment>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="107" parent="48" name="SOFT_OPENWAYS">
+      <comment>软件打开方式 外键</comment>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="108" parent="48" name="SOFT_TYPE_SOFT_ID">
+      <comment>软件类型外键</comment>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <index id="109" parent="48" name="SYS_C0012729">
+      <name-surrogate>1</name-surrogate>
+      <object-id>76634</object-id>
+      <created-timestamp>2016-09-15.16:46:20</created-timestamp>
+      <modified-timestamp>2016-09-15.16:46:20</modified-timestamp>
+      <columns>SOFT_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="110" parent="48" name="SYS_C0012729">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-09-15.16:46:20</modified-timestamp>
+      <columns>SOFT_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0012729</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="111" parent="48" name="FKD21B74T3YDDQOMAECR4AP2CT5">
+      <modified-timestamp>2016-09-15.16:46:35</modified-timestamp>
+      <columns>SOFT_TYPE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.QIN_SOFT_TYPE6.SYS_C0012724</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="112" parent="48" name="FK2G8B94VHTNG2S5GIVUWB9OU6V">
+      <modified-timestamp>2016-09-15.16:46:36</modified-timestamp>
+      <columns>SOFT_OPENWAYS</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.QIN_SOFT_OPENWAYS6.SYS_C0012721</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="113" parent="48" name="FK6D3A70SP13U38L9XO758YA94U">
+      <modified-timestamp>2016-09-15.16:46:36</modified-timestamp>
+      <columns>SOFT_TYPE_SOFT_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.QIN_SOFT_TYPE6.SYS_C0012724</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="114" parent="48" name="FK_AFU6V8RBQXWP9OPN2S70VM1A9">
+      <modified-timestamp>2016-09-16.13:17:24</modified-timestamp>
+      <columns>SOFT_TYPE_SOFT_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.QIN_SOFT_OPENWAYS6.SYS_C0012721</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="115" parent="49" name="COUNTRY_ID">
+      <comment>国家主键</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(19)|0</data-type>
+    </column>
+    <column id="116" parent="49" name="COUNTRY_NAME">
+      <comment>国家名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <index id="117" parent="49" name="SYS_C0012909">
+      <name-surrogate>1</name-surrogate>
+      <object-id>76955</object-id>
+      <created-timestamp>2016-09-30.15:38:07</created-timestamp>
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <columns>COUNTRY_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="118" parent="49" name="SYS_C0012909">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <columns>COUNTRY_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0012909</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="119" parent="50" name="USER_ID">
+      <comment>用户主键[编号]</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="120" parent="50" name="USER_FIRSTNAME">
+      <comment>用户首姓名</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="121" parent="50" name="USER_LASTNAME">
+      <comment>用户尾姓名</comment>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="122" parent="50" name="USER_LOGINNAME">
+      <comment>用户登录名</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="123" parent="50" name="USER_EMAIL">
+      <comment>用户邮箱</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(300)|0</data-type>
+    </column>
+    <column id="124" parent="50" name="USER_PASSWORD">
+      <comment>用户登录时的密码</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="125" parent="50" name="USER_COUNTRY">
+      <comment>用户所对应的国家[对应country表中的主键]</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(19)|0</data-type>
+    </column>
+    <column id="126" parent="50" name="USER_BIRTHDATE">
+      <comment>用户出生年月</comment>
+      <mandatory>1</mandatory>
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="127" parent="50" name="USER_GENDER">
+      <comment>用户性别</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="128" parent="50" name="USER_PHONENUMBER">
+      <comment>用户电话号码</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="129" parent="50" name="USER_DESCRIPTION">
+      <comment>用户描述</comment>
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="130" parent="50" name="USER2USERTYPE">
+      <comment>用户所对应的用户类型-UserType userType;与用户类型多对一</comment>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="131" parent="50" name="COUNTRY_USER_ID">
+      <comment>国家对应的用户主键-Country类中的Set&lt;User&gt; userSet;与用户一对多</comment>
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(19)|0</data-type>
+    </column>
+    <column id="132" parent="50" name="USER_TYPE_ID">
+      <comment>用户用户类型主键-UserType类中的Set&lt;User&gt; userSet;与用户一对多</comment>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <index id="133" parent="50" name="SYS_C0012920">
+      <name-surrogate>1</name-surrogate>
+      <object-id>76957</object-id>
+      <created-timestamp>2016-09-30.15:38:07</created-timestamp>
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <columns>USER_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="134" parent="50" name="SYS_C0012920">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <columns>USER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0012920</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="135" parent="50" name="FK736EPQIVP2DACJ1D642Y1S68W">
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <columns>USER_COUNTRY</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.TONGANGE_COUNTRY8.SYS_C0012909</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="136" parent="50" name="FKEX2GM7ILOE0HTQSFS0LWR35L3">
+      <modified-timestamp>2016-09-30.15:38:08</modified-timestamp>
+      <columns>USER2USERTYPE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.TONGANGE_USERTYPE8.SYS_C0012923</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="137" parent="50" name="FKVATKMW91XAIQH22OE7DWG03T">
+      <modified-timestamp>2016-09-30.15:38:08</modified-timestamp>
+      <columns>COUNTRY_USER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.TONGANGE_COUNTRY8.SYS_C0012909</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="138" parent="50" name="FKTESPSU6MIC1R3Y2HUU3T8TGJ3">
+      <modified-timestamp>2016-09-30.15:38:08</modified-timestamp>
+      <columns>USER_TYPE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.TONGANGE_USERTYPE8.SYS_C0012923</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="139" parent="51" name="USER_ID">
+      <comment>用户类型主键</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="140" parent="51" name="USER_TYPE_NAME">
+      <comment>用户类型名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <index id="141" parent="51" name="SYS_C0012923">
+      <name-surrogate>1</name-surrogate>
+      <object-id>76959</object-id>
+      <created-timestamp>2016-09-30.15:38:07</created-timestamp>
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <columns>USER_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="142" parent="51" name="SYS_C0012923">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-09-30.15:38:07</modified-timestamp>
+      <columns>USER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0012923</underlying-index>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
