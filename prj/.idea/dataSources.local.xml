@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Oracle - @192.168.0.105" uuid="7c2b8e9d-eef0-4c37-80e4-51a5b7a111ea">
-      <database-info product="Oracle" version="Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - Production&#10;With the Partitioning, Oracle Label Security, OLAP, Data Mining,&#10;Oracle Database Vault and Real Application Testing options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+      <database-info product="Oracle" version="Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - Production&#10;With the Partitioning, Oracle Label Security, OLAP, Data Mining,&#10;Oracle Database Vault and Real Application Testing options" jdbc-version="11.2" driver-name="Oracle JDBC driver" driver-version="11.2.0.3.0">
         <extra-name-characters>$#</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -10,6 +10,16 @@
       <secret-storage>master_key</secret-storage>
       <user-name>OYJR_RZHX</user-name>
       <resolve-scope>*:OYJR_RZHX,PUBLIC</resolve-scope>
+    </data-source>
+    <data-source name="orcl12c_src" uuid="c9912327-9d84-4551-a00e-1c6cd4dd46fe">
+      <database-info product="Oracle" version="Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - Production&#10;With the Partitioning, Oracle Label Security, OLAP, Data Mining,&#10;Oracle Database Vault and Real Application Testing options" jdbc-version="11.2" driver-name="Oracle JDBC driver" driver-version="11.2.0.3.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>tongange</user-name>
+      <resolve-scope>*:PUBLIC,TONGANGE</resolve-scope>
     </data-source>
   </component>
 </project>

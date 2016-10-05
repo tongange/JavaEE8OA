@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+    <!-- Role -->
+    <class name="qin.javaee8.hibernate.systemDomain.Role" table="oa_qin_role8">
+        <id name="id" column="role_id">
+            <generator class="sequence"/>
+        </id>
+
+        <!-- 岗位名称  -->
+        <property name="role_name" length="50" not-null="true"/>
+
+        <!-- 岗位要求描述 -->
+        <property name="role_description" length="3000" not-null="true"/>
+
+        <!-- 岗位是否已招满 -->
+        <property name="role_isFull" type="boolean" not-null="true"/>
+
+        <!-- 岗位所需人员数 -->
+        <property name="role_needPersons" type="short" not-null="true"/>
+
+        <!-- 岗位发布日期 -->
+        <property name="role_publishTime" type="timestamp" not-null="true"/>
+
+        <!-- 岗位截止日期 -->
+        <property name="role_endTime" type="timestamp" not-null="true"/>
+
+        <!-- 岗位所对应的招聘人员 -->
+        <set name="personSet" table="oa_qin_role_personSet8" cascade="delete">
+            <key foreign-key="fk_qin_role_personSetKey" column="oa_qin_role_personSetKey"/>
+            <one-to-many class="qin.javaee8.hibernate.systemDomain.FindJobPerson"/>
+        </set>
+
+    </class>
+
+    <!-- ElSeal -->
+    <class name="qin.javaee8.hibernate.systemDomain.ElSeal" table="oa_qin_elSeal8">
+        <id name="id" column="elSeal_id">
+            <generator class="sequence"/>
+        </id>
+
+        <!-- 公章标题 -->
+        <property name="elSeal_title" length="50" not-null="true"/>
+
+        <!-- 公章描述 -->
+        <property name="elSeal_description" length="3000" not-null="true"/>
+
+        <!-- 公章创建时间 -->
+        <property name="elSeal_CreateTime" type="timestamp"/>
+
+        <!-- 公章路径 -->
+        <property name="elSeal_path" not-null="true" length="540"/>
+
+        <one-to-one name="elSeal_employee" class="qin.javaee8.hibernate.hrDomain.Employee"
+                    cascade="delete" foreign-key="fk_qin_elSeal_Employee"/>
+
+    </class>
+
+    <!-- FindJobPerson -->
+    <class name="qin.javaee8.hibernate.systemDomain.FindJobPerson" table="oa_qin_findJobPerson8">
+        <id name="id" column="findJobPerson_id">
+            <generator class="sequence"/>
+        </id>
+
+        <!-- @param  jobPersonName                                招聘人员名字-->
+        <property name="jobPersonName" length="5" not-null="true"/>
+
+        <!-- @param  jobPersonGender                              招聘人员性别-->
+        <property name="jobPersonGender" not-null="true">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">qin.javaee8.hibernate.domain.Gender</param>
+                <param name="type">12</param>
+            </type>
+        </property>
+
+        <!-- @param  jobPersonOldCompanyName                      以前公司名称-->
+        <property name="jobPersonOldCompanyName" length="50" not-null="true"/>
+
+        <!-- @param  jobPersonOldJob                              当前行业职能-->
+        <property name="jobPersonOldJob" length="30" not-null="true"/>
+
+        <!-- @param  jobPersonStartJobTime                        开始工作年份-->
+        <property name="jobPersonStartJobTime" not-null="true" type="timestamp"/>
+
+        <!-- @param  jobPersonJobName                             职位名称-->
+        <property name="jobPersonJobName" length="50" not-null="true"/>
+
+        <!-- @param  jobPersonNowCity                             当前城市-->
+        <property name="jobPersonNowCity" length="5" not-null="true"/>
+
+        <!-- @param  jobPersonBirth                               出生年份-->
+        <property name="jobPersonBirth" type="date" not-null="true"/>
+
+        <!-- @param  jobPersonIsMarried                           婚姻状况-->
+        <property name="jobPersonIsMarried" not-null="true"/>
+
+        <!-- @param  jobPersonMobile                              手机-->
+        <property name="jobPersonMobile" not-null="true" type="long"/>
+
+        <!-- @param  jobPersonEmail                               邮箱-->
+        <property name="jobPersonEmail" not-null="true" length="40"/>
+
+        <!-- @param  jobPersonCountry                             国籍-->
+        <property name="jobPersonCountry" length="10" not-null="true"/>
+
+        <!-- @param  jobPersonLocation                            户口-->
+        <property name="jobPersonLocation" length="50" not-null="true"/>
+
+        <!-- @param  jobPersonWantJob                             期望行业-->
+        <property name="jobPersonWantJob" length="30" not-null="true"/>
+
+        <!-- @param  jobPersonFunction                            期望职能-->
+        <property name="jobPersonFunction" length="30" not-null="true"/>
+
+        <!-- @param  jobPersonWantLocation                        期望地点-->
+        <property name="jobPersonWantLocation" length="10" not-null="true"/>
+
+        <!-- @param  jobPersonWantsYearSalary                     期望年薪-->
+        <property name="jobPersonWantsYearSalary" not-null="true" type="double"/>
+
+        <!-- @param  jobPersonOldYearSalary                       以前年薪-->
+        <property name="jobPersonOldYearSalary" not-null="true" type="double"/>
+
+        <!-- @param  jobPersonExperienceCompanyName               公司名称-->
+        <property name="jobPersonExperienceCompanyName" length="30" not-null="true"/>
+
+        <!-- @param  jobPersonExperienceCompanyNature             公司性质-->
+        <property name="jobPersonExperienceCompanyNature" length="10" not-null="true"
+                  column="jobPerExpCompanyNature"/>
+
+        <!-- @param  jobPersonExperienceCompanyPeopleNumber       公司规模-->
+        <property name="jobPersonExperienceCompanyPeopleNumber" length="30" not-null="true"
+                  column="jobPernExpCompanyPeopleNumber"/>
+
+        <!-- @param  jobPersonExperienceCompanySimpleIntroduction 公司简介-->
+        <property name="jobPersonExperienceCompanySimpleIntroduction"
+                  length="1000" not-null="true" column="jobPerExpComSimpleIntroduction"/>
+
+        <!-- @param  jobPersonExperienceCompanyJobName            职位名称-->
+        <property name="jobPersonExperienceCompanyJobName"
+                  length="50" not-null="true" column="jobPerExpCompanyJobName"/>
+
+        <!-- @param  jobPersonExperienceCompanyLocation           工作地点-->
+        <property name="jobPersonExperienceCompanyLocation" length="30"
+                  not-null="true" column="jobPersonExpCompanyLocation"/>
+
+        <!-- @param  jobPersonExperienceCompanyUnderlingPeople    下属人数-->
+        <property name="jobPersonExperienceCompanyUnderlingPeople" type="integer"
+                  column="jobPerExpComUnderlingPeople"/>
+
+        <!-- @param  jobPersonExperienceCompanyJobTime            任职时间-->
+        <property name="jobPersonExperienceCompanyJobTime" length="50"
+                  not-null="true" column="jobPerExpCompanyJobTime"/>
+
+        <!-- @param  jobPersonExperienceCompanyDutyOfWork         工作职责-->
+        <property name="jobPersonExperienceCompanyDutyOfWork"
+                  length="1000" not-null="true" column="jobPeExpCompanyDutyOfWork"/>
+
+        <!-- @param  jobPersonExperienceCompanyJobReportToWHo     汇报对象-->
+        <property name="jobPersonExperienceCompanyJobReportToWHo"
+                  length="40" not-null="true" column="jobPerExpCompanyJobReportToWho"/>
+
+        <!-- @param  jobPersonExperienceCompanyMonthSalary        月薪-->
+        <property name="jobPersonExperienceCompanyMonthSalary"
+                  length="10" not-null="true" column="jobPerExpCompanyMonthSalary"/>
+
+        <!-- @param  jobPersonExperienceCompanyScore              工作业绩-->
+        <property name="jobPersonExperienceCompanyScore"
+                  length="1000" not-null="true" column="jobPerExperienceCompanyScore"/>
+
+        <!-- @param  jobPersonSchoolName                          学校名称-->
+        <property name="jobPersonSchoolName" length="30"/>
+
+        <!-- @param  jobPersonMajorName                           专业名称-->
+        <property name="jobPersonMajorName" length="30"/>
+
+        <!-- @param  jobPersonSchoolStudyTime                     就读时间-->
+        <property name="jobPersonSchoolStudyTime" length="50"/>
+
+        <!-- @param  jobPersonSchoolRecord                        学历-->
+        <property name="jobPersonSchoolRecord" length="4"/>
+
+        <!-- @param  jobPersonProjectName                         项目描述-->
+        <property name="jobPersonProjectName" length="3000"/>
+
+        <!-- @param  jobPersonProjectCompanyName                  公司名称-->
+        <property name="jobPersonProjectCompanyName" length="50"/>
+
+        <!-- @param  jobPersonProjectFunction                     项目职务-->
+        <property name="jobPersonProjectFunction" length="50"/>
+
+        <!-- @param  jobPersonProjectDoTime                       项目时间-->
+        <property name="jobPersonProjectDoTime" length="50"/>
+
+        <!-- @param  jobPersonProjectDescription                  项目描述-->
+        <property name="jobPersonProjectDescription" length="3000"/>
+
+        <!-- @param  jobPersonProjectDuty                         项目职责-->
+        <property name="jobPersonProjectDuty" length="3000"/>
+
+        <!-- @param  jobPersonProjectScore                        项目业绩-->
+        <property name="jobPersonProjectScore" length="3000"/>
+
+        <!-- @param  jobPersonMyIntroduction                      自我评价-->
+        <property name="jobPersonMyIntroduction" length="1000" not-null="true"/>
+
+        <!-- @param  jobPersonExperienceCompanyDepartment         所在部门-->
+        <!-- 一个部门对应多个招聘人员 -->
+        <!--<many-to-one name="jobPersonExperienceCompanyDepartment"-->
+        <!--foreign-key="fk_jobPersonExperienceCompanyDepartment" cascade="delete"/>-->
+        <join table="oa_qin_findJobPerson_dep8">
+            <key foreign-key="fk_findJobPerson_deparmentKey" column="qin_findJobPerson_depKey"/>
+            <many-to-one name="jobPersonExperienceCompanyDepartment"
+                         foreign-key="fk_findJobPerson_depMany2One" cascade="delete"
+                         column="qin_findJobPerson_depMany2One"/>
+        </join>
+
+    </class>
+
+    <!-- Department -->
+    <class name="qin.javaee8.hibernate.hrDomain.Department" table="oa_qin_department8">
+        <id name="id" column="department_id">
+            <generator class="uuid"/>
+        </id>
+
+        <!-- 名称 -->
+        <property name="departmentName" length="30" not-null="true"/>
+
+        <!-- 描述 -->
+        <property name="departmentDescription" length="3000"/>
+
+        <!-- 对应的招聘人员 -->
+        <set name="departmentJobPersonSet" table="oa_qin_dep_findJobPerson8" cascade="delete">
+            <key column="department_findJobPersonIdKey" foreign-key="fk_departmentJobPersonSet"/>
+            <one-to-many class="qin.javaee8.hibernate.systemDomain.FindJobPerson"/>
+        </set>
+
+        <!-- 对应的子部门 -->
+        <set name="departmentChildrenSet" table="oa_qin_dep_childrenSet8" cascade="delete">
+            <key column="department_childrenSetKey" foreign-key="fk_departmentChildrenSet"/>
+            <one-to-many class="qin.javaee8.hibernate.hrDomain.Department"/>
+        </set>
+
+        <!-- 对应的上级部门 -->
+        <!--<many-to-one name="departmentParent" class="qin.javaee8.hibernate.hrDomain.Department"-->
+        <!--foreign-key="fk_departmentParent" column="departmentParentId" cascade="delete"/>-->
+        <join table="oa_qin_department_parent8">
+            <key foreign-key="fk_depa_parentKey" column="qin_department_parent8IdKey"/>
+            <many-to-one name="departmentParent"
+                         foreign-key="fk_dep_parentMany2One" cascade="delete" column="qin_dep_parentMany2One"/>
+        </join>
+
+    </class>
+
+    <!-- Employee -->
+    <class name="qin.javaee8.hibernate.hrDomain.Employee" table="oa_qin_employee8">
+        <id name="id" column="employee_id">
+            <generator class="sequence"/>
+        </id>
+
+        <!-- 员工姓名 -->
+        <property name="employeeName" length="20" not-null="true"/>
+
+        <!-- 员工性别 -->
+        <property name="employeeGender" not-null="true">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">qin.javaee8.hibernate.domain.Gender</param>
+                <param name="type">12</param>
+            </type>
+        </property>
+
+        <!-- 员工年龄 -->
+        <property name="employeeAge" not-null="true" type="integer"/>
+
+        <!-- 员工描述 -->
+        <property name="employeeDescription" length="3000" not-null="true"/>
+
+        <!-- 员工对应的电子公章 -->
+        <join table="oa_qin_employee_elSeal8">
+            <key foreign-key="fk_employeeElSealKey" column="qin_employee_elSealKey"/>
+            <many-to-one name="employeeElSeal" class="qin.javaee8.hibernate.hrDomain.Employee"
+                         foreign-key="fk_employeeElSealMany2One" cascade="delete"
+                         column="qin_employee_elSealMany2One"/>
+        </join>
+
+    </class>
+
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

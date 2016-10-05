@@ -38,6 +38,9 @@
       <property name="caretWidth" class="java.lang.Integer" />
     </properties>
   </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
   <component name="IdProvider" IDEtalkID="3AEFA7264B5234024D58E2D91F3C6286" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -66,8 +69,5 @@
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/../../output" />
-  </component>
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\IntellijIDEA\AppData\Roaming\Subversion</configuration>
   </component>
 </project>
