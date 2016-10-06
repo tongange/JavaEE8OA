@@ -26,6 +26,12 @@ public class Department implements SuperEntity8<String>
     //endregion
 
     //region 带参数的构造函数
+    public Department(String id, String departmentName, String departmentDescription)
+    {
+        this.id = id;
+        this.departmentName = departmentName;
+        this.departmentDescription = departmentDescription;
+    }
 
     /**
      * @param departmentName        名称

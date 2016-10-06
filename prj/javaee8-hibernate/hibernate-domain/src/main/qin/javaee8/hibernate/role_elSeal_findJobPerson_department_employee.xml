@@ -229,7 +229,7 @@
     <!-- Department -->
     <class name="qin.javaee8.hibernate.hrDomain.Department" table="oa_qin_department8">
         <id name="id" column="department_id">
-            <generator class="uuid"/>
+            <generator class="assigned"/>
         </id>
 
         <!-- 名称 -->
