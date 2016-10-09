@@ -84,6 +84,53 @@ public class User implements SuperEntity65<Integer>
     }
     //endregion
 
+    //region 完整构造函数
+
+    /**
+     * @param id
+     * @param user_firstName
+     * @param user_lastName
+     * @param user_loginName
+     * @param user_email
+     * @param user_password
+     * @param user_country
+     * @param user_birthdate
+     * @param user_gender
+     * @param user_phoneNumber
+     * @param user_description
+     * @param userType
+     * @param user_password2
+     * @param user_gender2
+     * @param user_country2
+     */
+    public User
+    (
+              Integer id, String user_firstName, String user_lastName,
+              String user_loginName, String user_email, String user_password,
+              Country user_country, Date user_birthdate, Gender user_gender,
+              String user_phoneNumber, String user_description, UserType userType,
+              String user_password2, String user_gender2, String user_country2
+    )
+    {
+        this.id = id;
+        this.user_firstName = user_firstName;
+        this.user_lastName = user_lastName;
+        this.user_loginName = user_loginName;
+        this.user_email = user_email;
+        this.user_password = user_password;
+        this.user_country = user_country;
+        this.user_birthdate = user_birthdate;
+        this.user_gender = user_gender;
+        this.user_phoneNumber = user_phoneNumber;
+        this.user_description = user_description;
+        this.userType = userType;
+        this.user_password2 = user_password2;
+        this.user_gender2 = user_gender2;
+        this.user_country2 = user_country2;
+    }
+
+    //endregion
+
     //region 主键
     private Integer id;
 
@@ -352,4 +399,6 @@ public class User implements SuperEntity65<Integer>
     }
 
     //endregion
+
+
 }

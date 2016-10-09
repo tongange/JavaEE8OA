@@ -1,8 +1,12 @@
 package qin.test;
 
+import org.junit.AfterClass;
 import org.junit.Test;
 import qin.javaee8.core.JavaEE8BaseSupport;
+import qin.javaee8.hibernate.domain.Gender;
 import qin.javaee8.hibernate.hrDomain.Department;
+import qin.javaee8.hibernate.systemDomain.FindJobPerson;
+import qin.javaee8.hibernate.systemDomain.Role;
 
 /**
  * Created by Administrator on 2016/10/5 10-005-05.<br/>
@@ -10,12 +14,117 @@ import qin.javaee8.hibernate.hrDomain.Department;
 public class MakeTable implements JavaEE8BaseSupport
 {
 
-    private final JavaEE8Test j8 = new JavaEE8Test();
+    private static final JavaEE8Test j8 = new JavaEE8Test();
 
-    @Test public void makeTable() {
-
+    @Test
+    public void saveRole()
+    {
+        Role role = new Role("java开发", "实现java软件的开发", false, (short) 30, j8Tools.getTime(2016, 10, 7), j8Tools.getTime(2016, 10, 8));
+        j8.session.save(role);
     }
 
+    @AfterClass
+    public static void end()
+    {
+        j8.transaction.commit();
+    }
+
+    @Test
+    public void makeDataGrid()
+    {
+        String s = j8Tools.printDataGrid
+                  (
+                            "用户详细信息", "tb_user", "url", 1024, 768,
+                            true, true,
+                            new String[]
+                                      {
+                                                "id", "user_firstName", "user_lastName", "user_loginName",
+                                                "user_email", "user_country", "user_birthdate", "user_gender",
+                                                "user_phoneNumber", "user_description", "userType"
+                                      },
+                            new String[]
+                                      {
+                                                "用户编号", "用户首姓名", "用户尾姓名", "用户登录名",
+                                                "用户邮箱", "用户所对应的国家", "用户生日", "用户性别",
+                                                "用户联系方式", "用户描述", "用户所对应的类型"
+                                      },
+                            new Integer[]
+                                      {
+                                                60, 100, 100, 100,
+                                                300, 300, 300, 300,
+                                                300, 300, 300
+                                      }
+                  );
+        j8Tools.superInfo(s);
+    }
+
+    @Test
+    public void saveFindJobPerson()
+    {
+        FindJobPerson f = new FindJobPerson();
+        f.setJobPersonName("刘峰良");
+        f.setJobPersonGender(Gender.BOY);
+        f.setJobPersonOldCompanyName(" ");
+        f.setJobPersonOldJob(" ");
+        f.setJobPersonStartJobTime(j8Tools.getTime(2003, 9, 1));
+        f.setJobPersonJobName("java开发工程师");
+        f.setJobPersonNowCity("北京");
+        f.setJobPersonBirth(j8Tools.getTime(1984, 2, 19));
+        f.setJobPersonIsMarried("保密");
+        f.setJobPersonMobile(13061681019l);
+        f.setJobPersonEmail("liufengliang@163.com");
+        f.setJobPersonCountry("湖北");
+        f.setJobPersonLocation("湖北");
+        f.setJobPersonWantJob("软件行业");
+        f.setJobPersonFunction("java开发或c#开发");
+        f.setJobPersonWantLocation("上海或杭州");
+        f.setJobPersonWantsYearSalary(500000.0000d);
+        f.setJobPersonOldYearSalary(400000.0000d);
+        f.setJobPersonExperienceCompanyName("上海宝信软件");
+        f.setJobPersonExperienceCompanyNature("国企");
+        f.setJobPersonExperienceCompanyPeopleNumber("50人");
+        f.setJobPersonExperienceCompanySimpleIntroduction("上市公司+国企");
+        f.setJobPersonExperienceCompanyJobName("java高级开发工程师");
+        f.setJobPersonExperienceCompanyLocation("上海");
+        f.setJobPersonExperienceCompanyUnderlingPeople(20);
+        f.setJobPersonExperienceCompanyJobTime(" ");
+        f.setJobPersonExperienceCompanyDutyOfWork("开发java程序");
+        f.setJobPersonExperienceCompanyDepartment(j8.session.get(Department.class, "Object"));
+        f.setJobPersonExperienceCompanyJobReportToWHo("项目经理");
+        f.setJobPersonExperienceCompanyMonthSalary("250000");
+        f.setJobPersonExperienceCompanyScore("完成业绩");
+        f.setJobPersonSchoolName(" ");
+        f.setJobPersonMajorName(" ");
+        f.setJobPersonSchoolStudyTime(" ");
+        f.setJobPersonSchoolRecord(" ");
+        f.setJobPersonProjectName(" ");
+        f.setJobPersonProjectCompanyName(" ");
+        f.setJobPersonProjectFunction(" ");
+        f.setJobPersonProjectDoTime(" ");
+        f.setJobPersonProjectDescription(" ");
+        f.setJobPersonProjectDuty(" ");
+        f.setJobPersonProjectScore(" ");
+        f.setJobPersonMyIntroduction(" ");
+
+        j8.session.save(f);
+        j8.transaction.commit();
+    }
+
+    @Test
+    public void new_saveDepartment()
+    {
+        Department top = new Department("Object", "谷歌顶级部门", "管理谷歌所有事务");
+        Department programm = new Department("Programm", "开发部", "开发谷歌软件:比如安卓, 谷歌浏览器");
+        top.getDepartmentChildrenSet().add(programm);
+        programm.setDepartmentParent(top);
+
+        j8.session.save(top);
+        j8.session.save(programm);
+
+        j8.transaction.commit();
+    }
+
+    //region 1
     private void saveObjects(Object... objects)
     {
         for (int i = 0; i < objects.length; i++)
@@ -91,6 +200,7 @@ public class MakeTable implements JavaEE8BaseSupport
             System.out.println("j8.session.save(d" + i + ");");
         }
     }
+    //endregion
 }
 
 

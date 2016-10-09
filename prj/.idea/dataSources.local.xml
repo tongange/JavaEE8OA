@@ -21,5 +21,25 @@
       <user-name>tongange</user-name>
       <resolve-scope>*:PUBLIC,TONGANGE</resolve-scope>
     </data-source>
+    <data-source name="orcl12@localhost" uuid="34d65901-0582-4bb0-adef-4bc4f1df386d">
+      <database-info product="Oracle" version="Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production&#10;With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options" jdbc-version="11.2" driver-name="Oracle JDBC driver" driver-version="11.2.0.3.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>system</user-name>
+      <resolve-scope>*:PUBLIC,SYSTEM</resolve-scope>
+    </data-source>
+    <data-source name="orcl_tongange" uuid="2aec9e00-48c3-480c-a9c7-0d7f0bc510a8">
+      <database-info product="Oracle" version="Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production&#10;With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options" jdbc-version="11.2" driver-name="Oracle JDBC driver" driver-version="11.2.0.3.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>c##tongange</user-name>
+      <resolve-scope>*:C##TONGANGE,PUBLIC</resolve-scope>
+    </data-source>
   </component>
 </project>

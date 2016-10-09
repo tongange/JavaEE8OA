@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="orcl_tongange">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="2.6">
+    <schema id="1" name="C##TONGANGE">
+      <object-id>105</object-id>
+      <created-timestamp>2016-10-07.10:14:27</created-timestamp>
+      <modified-timestamp>2016-10-07.10:15:41</modified-timestamp>
+      <visible>1</visible>
+      <introspection-timestamp>2016-10-07.10:15:56</introspection-timestamp>
+    </schema>
+    <schema id="2" name="PUBLIC">
+      <object-id>1</object-id>
+    </schema>
+    <schema id="3" name="SYS"/>
+    <schema id="4" name="AUDSYS">
+      <object-id>7</object-id>
+    </schema>
+    <schema id="5" name="SYSTEM">
+      <object-id>8</object-id>
+    </schema>
+    <schema id="6" name="OUTLN">
+      <object-id>13</object-id>
+    </schema>
+    <schema id="7" name="GSMADMIN_INTERNAL">
+      <object-id>21</object-id>
+    </schema>
+    <schema id="8" name="GSMUSER">
+      <object-id>22</object-id>
+    </schema>
+    <schema id="9" name="DIP">
+      <object-id>23</object-id>
+    </schema>
+    <schema id="10" name="ORACLE_OCM">
+      <object-id>36</object-id>
+    </schema>
+    <schema id="11" name="DBSNMP">
+      <object-id>48</object-id>
+    </schema>
+    <schema id="12" name="APPQOSSYS">
+      <object-id>49</object-id>
+    </schema>
+    <schema id="13" name="XDB">
+      <object-id>50</object-id>
+    </schema>
+    <schema id="14" name="ANONYMOUS">
+      <object-id>51</object-id>
+    </schema>
+    <schema id="15" name="GSMCATUSER">
+      <object-id>61</object-id>
+    </schema>
+    <schema id="16" name="WMSYS">
+      <object-id>62</object-id>
+    </schema>
+    <schema id="17" name="OJVMSYS">
+      <object-id>70</object-id>
+    </schema>
+    <schema id="18" name="CTXSYS">
+      <object-id>73</object-id>
+    </schema>
+    <schema id="19" name="ORDSYS">
+      <object-id>75</object-id>
+    </schema>
+    <schema id="20" name="ORDDATA">
+      <object-id>76</object-id>
+    </schema>
+    <schema id="21" name="ORDPLUGINS">
+      <object-id>77</object-id>
+    </schema>
+    <schema id="22" name="SI_INFORMTN_SCHEMA">
+      <object-id>78</object-id>
+    </schema>
+    <schema id="23" name="MDSYS">
+      <object-id>79</object-id>
+    </schema>
+    <schema id="24" name="OLAPSYS">
+      <object-id>82</object-id>
+    </schema>
+    <schema id="25" name="MDDATA">
+      <object-id>85</object-id>
+    </schema>
+    <schema id="26" name="SPATIAL_WFS_ADMIN_USR">
+      <object-id>87</object-id>
+    </schema>
+    <schema id="27" name="SPATIAL_CSW_ADMIN_USR">
+      <object-id>90</object-id>
+    </schema>
+    <schema id="28" name="LBACSYS">
+      <object-id>92</object-id>
+    </schema>
+    <schema id="29" name="FLOWS_FILES">
+      <object-id>94</object-id>
+    </schema>
+    <schema id="30" name="APEX_PUBLIC_USER">
+      <object-id>95</object-id>
+    </schema>
+    <schema id="31" name="APEX_040200">
+      <object-id>98</object-id>
+    </schema>
+    <schema id="32" name="DVF">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="33" name="DVSYS">
+      <object-id>1279990</object-id>
+    </schema>
+    <schema id="34" name="SYSBACKUP">
+      <object-id>2147483617</object-id>
+    </schema>
+    <schema id="35" name="SYSDG">
+      <object-id>2147483618</object-id>
+    </schema>
+    <schema id="36" name="SYSKM">
+      <object-id>2147483619</object-id>
+    </schema>
+    <schema id="37" name="XS$NULL">
+      <object-id>2147483638</object-id>
+    </schema>
+    <sequence id="38" parent="1" name="HIBERNATE_SEQUENCE">
+      <object-id>92885</object-id>
+      <created-timestamp>2016-10-07.10:14:32</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:32</modified-timestamp>
+      <min-value>1</min-value>
+      <increment-by>1</increment-by>
+      <next-value>21</next-value>
+    </sequence>
+    <table id="39" parent="1" name="HT_OA_QIN_DEPARTMENT8">
+      <object-id>92862</object-id>
+      <created-timestamp>2016-10-07.10:14:27</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:27</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="40" parent="1" name="HT_OA_QIN_EMPLOYEE8">
+      <object-id>92860</object-id>
+      <created-timestamp>2016-10-07.10:14:27</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:27</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="41" parent="1" name="HT_OA_QIN_FINDJOBPERSON8">
+      <object-id>92861</object-id>
+      <created-timestamp>2016-10-07.10:14:27</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:27</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="42" parent="1" name="OA_QIN_DEPARTMENT8">
+      <object-id>92863</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="43" parent="1" name="OA_QIN_DEPARTMENT_PARENT8">
+      <object-id>92865</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="44" parent="1" name="OA_QIN_ELSEAL8">
+      <object-id>92867</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="45" parent="1" name="OA_QIN_EMPLOYEE8">
+      <object-id>92869</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="46" parent="1" name="OA_QIN_EMPLOYEE_ELSEAL8">
+      <object-id>92871</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="47" parent="1" name="OA_QIN_FINDJOBPERSON8">
+      <object-id>92873</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="48" parent="1" name="OA_QIN_FINDJOBPERSON_DEP8">
+      <object-id>92875</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="49" parent="1" name="OA_QIN_ROLE8">
+      <object-id>92877</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="50" parent="1" name="TONGANGE_COUNTRY8">
+      <object-id>92879</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="51" parent="1" name="TONGANGE_USER8">
+      <object-id>92881</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:15:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="52" parent="1" name="TONGANGE_USERTYPE8">
+      <object-id>92883</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <column id="53" parent="39" name="DEPARTMENT_ID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="54" parent="40" name="EMPLOYEE_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="55" parent="41" name="FINDJOBPERSON_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="56" parent="42" name="DEPARTMENT_ID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="57" parent="42" name="DEPARTMENTNAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="58" parent="42" name="DEPARTMENTDESCRIPTION">
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="59" parent="42" name="DEPARTMENT_CHILDRENSETKEY">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <index id="60" parent="42" name="SYS_C0010075">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92864</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>DEPARTMENT_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="61" parent="42" name="SYS_C0010075">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>DEPARTMENT_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010075</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="62" parent="42" name="FK_DEPARTMENTCHILDRENSET">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>DEPARTMENT_CHILDRENSETKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>SYS_C0010075</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="63" parent="43" name="QIN_DEPARTMENT_PARENT8IDKEY">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="64" parent="43" name="QIN_DEP_PARENTMANY2ONE">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <index id="65" parent="43" name="SYS_C0010077">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92866</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>QIN_DEPARTMENT_PARENT8IDKEY</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="66" parent="43" name="SYS_C0010077">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>QIN_DEPARTMENT_PARENT8IDKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010077</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="67" parent="43" name="FK_DEPA_PARENTKEY">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>QIN_DEPARTMENT_PARENT8IDKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.OA_QIN_DEPARTMENT8.SYS_C0010075</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="68" parent="43" name="FK_DEP_PARENTMANY2ONE">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>QIN_DEP_PARENTMANY2ONE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.OA_QIN_DEPARTMENT8.SYS_C0010075</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="69" parent="44" name="ELSEAL_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="70" parent="44" name="ELSEAL_TITLE">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="71" parent="44" name="ELSEAL_DESCRIPTION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="72" parent="44" name="ELSEAL_CREATETIME">
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="73" parent="44" name="ELSEAL_PATH">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(540)|0</data-type>
+    </column>
+    <index id="74" parent="44" name="SYS_C0010082">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92868</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>ELSEAL_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="75" parent="44" name="SYS_C0010082">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>ELSEAL_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010082</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="76" parent="45" name="EMPLOYEE_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="77" parent="45" name="EMPLOYEENAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="78" parent="45" name="EMPLOYEEGENDER">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="79" parent="45" name="EMPLOYEEAGE">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="80" parent="45" name="EMPLOYEEDESCRIPTION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <index id="81" parent="45" name="SYS_C0010088">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92870</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>EMPLOYEE_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="82" parent="45" name="SYS_C0010088">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>EMPLOYEE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010088</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="83" parent="46" name="QIN_EMPLOYEE_ELSEALKEY">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="84" parent="46" name="QIN_EMPLOYEE_ELSEALMANY2ONE">
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <index id="85" parent="46" name="SYS_C0010090">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92872</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>QIN_EMPLOYEE_ELSEALKEY</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="86" parent="46" name="SYS_C0010090">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>QIN_EMPLOYEE_ELSEALKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010090</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="87" parent="46" name="FK_EMPLOYEEELSEALKEY">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>QIN_EMPLOYEE_ELSEALKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.OA_QIN_EMPLOYEE8.SYS_C0010088</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="88" parent="46" name="FK_EMPLOYEEELSEALMANY2ONE">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>QIN_EMPLOYEE_ELSEALMANY2ONE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.OA_QIN_EMPLOYEE8.SYS_C0010088</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="89" parent="47" name="FINDJOBPERSON_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="90" parent="47" name="JOBPERSONNAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(5)|0</data-type>
+    </column>
+    <column id="91" parent="47" name="JOBPERSONGENDER">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="92" parent="47" name="JOBPERSONOLDCOMPANYNAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="93" parent="47" name="JOBPERSONOLDJOB">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="94" parent="47" name="JOBPERSONSTARTJOBTIME">
+      <mandatory>1</mandatory>
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="95" parent="47" name="JOBPERSONJOBNAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="96" parent="47" name="JOBPERSONNOWCITY">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(5)|0</data-type>
+    </column>
+    <column id="97" parent="47" name="JOBPERSONBIRTH">
+      <mandatory>1</mandatory>
+      <data-type>DATE|0</data-type>
+    </column>
+    <column id="98" parent="47" name="JOBPERSONISMARRIED">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="99" parent="47" name="JOBPERSONMOBILE">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(19)|0</data-type>
+    </column>
+    <column id="100" parent="47" name="JOBPERSONEMAIL">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="101" parent="47" name="JOBPERSONCOUNTRY">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="102" parent="47" name="JOBPERSONLOCATION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="103" parent="47" name="JOBPERSONWANTJOB">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="104" parent="47" name="JOBPERSONFUNCTION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="105" parent="47" name="JOBPERSONWANTLOCATION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="106" parent="47" name="JOBPERSONWANTSYEARSALARY">
+      <mandatory>1</mandatory>
+      <data-type>FLOAT(126)|0</data-type>
+    </column>
+    <column id="107" parent="47" name="JOBPERSONOLDYEARSALARY">
+      <mandatory>1</mandatory>
+      <data-type>FLOAT(126)|0</data-type>
+    </column>
+    <column id="108" parent="47" name="JOBPERSONEXPERIENCECOMPANYNAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="109" parent="47" name="JOBPEREXPCOMPANYNATURE">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="110" parent="47" name="JOBPERNEXPCOMPANYPEOPLENUMBER">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="111" parent="47" name="JOBPEREXPCOMSIMPLEINTRODUCTION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(1000)|0</data-type>
+    </column>
+    <column id="112" parent="47" name="JOBPEREXPCOMPANYJOBNAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="113" parent="47" name="JOBPERSONEXPCOMPANYLOCATION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="114" parent="47" name="JOBPEREXPCOMUNDERLINGPEOPLE">
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="115" parent="47" name="JOBPEREXPCOMPANYJOBTIME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="116" parent="47" name="JOBPEEXPCOMPANYDUTYOFWORK">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(1000)|0</data-type>
+    </column>
+    <column id="117" parent="47" name="JOBPEREXPCOMPANYJOBREPORTTOWHO">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(40)|0</data-type>
+    </column>
+    <column id="118" parent="47" name="JOBPEREXPCOMPANYMONTHSALARY">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <column id="119" parent="47" name="JOBPEREXPERIENCECOMPANYSCORE">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(1000)|0</data-type>
+    </column>
+    <column id="120" parent="47" name="JOBPERSONSCHOOLNAME">
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="121" parent="47" name="JOBPERSONMAJORNAME">
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="122" parent="47" name="JOBPERSONSCHOOLSTUDYTIME">
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="123" parent="47" name="JOBPERSONSCHOOLRECORD">
+      <data-type>VARCHAR2(4)|0</data-type>
+    </column>
+    <column id="124" parent="47" name="JOBPERSONPROJECTNAME">
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="125" parent="47" name="JOBPERSONPROJECTCOMPANYNAME">
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="126" parent="47" name="JOBPERSONPROJECTFUNCTION">
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="127" parent="47" name="JOBPERSONPROJECTDOTIME">
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="128" parent="47" name="JOBPERSONPROJECTDESCRIPTION">
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="129" parent="47" name="JOBPERSONPROJECTDUTY">
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="130" parent="47" name="JOBPERSONPROJECTSCORE">
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="131" parent="47" name="JOBPERSONMYINTRODUCTION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(1000)|0</data-type>
+    </column>
+    <column id="132" parent="47" name="OA_QIN_ROLE_PERSONSETKEY">
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="133" parent="47" name="DEPARTMENT_FINDJOBPERSONIDKEY">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <index id="134" parent="47" name="SYS_C0010122">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92874</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>FINDJOBPERSON_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="135" parent="47" name="SYS_C0010122">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>FINDJOBPERSON_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010122</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="136" parent="47" name="FK_QIN_ROLE_PERSONSETKEY">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>OA_QIN_ROLE_PERSONSETKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.OA_QIN_ROLE8.SYS_C0010132</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="137" parent="47" name="FK_DEPARTMENTJOBPERSONSET">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>DEPARTMENT_FINDJOBPERSONIDKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.OA_QIN_DEPARTMENT8.SYS_C0010075</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="138" parent="48" name="QIN_FINDJOBPERSON_DEPKEY">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="139" parent="48" name="QIN_FINDJOBPERSON_DEPMANY2ONE">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <index id="140" parent="48" name="SYS_C0010124">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92876</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>QIN_FINDJOBPERSON_DEPKEY</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="141" parent="48" name="SYS_C0010124">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>QIN_FINDJOBPERSON_DEPKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010124</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="142" parent="48" name="FK_FINDJOBPERSON_DEPARMENTKEY">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>QIN_FINDJOBPERSON_DEPKEY</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.OA_QIN_FINDJOBPERSON8.SYS_C0010122</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="143" parent="48" name="FK_FINDJOBPERSON_DEPMANY2ONE">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>QIN_FINDJOBPERSON_DEPMANY2ONE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.OA_QIN_DEPARTMENT8.SYS_C0010075</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="144" parent="49" name="ROLE_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="145" parent="49" name="ROLE_NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(50)|0</data-type>
+    </column>
+    <column id="146" parent="49" name="ROLE_DESCRIPTION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="147" parent="49" name="ROLE_ISFULL">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(1)|0</data-type>
+    </column>
+    <column id="148" parent="49" name="ROLE_NEEDPERSONS">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(5)|0</data-type>
+    </column>
+    <column id="149" parent="49" name="ROLE_PUBLISHTIME">
+      <mandatory>1</mandatory>
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="150" parent="49" name="ROLE_ENDTIME">
+      <mandatory>1</mandatory>
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <index id="151" parent="49" name="SYS_C0010132">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92878</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>ROLE_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="152" parent="49" name="SYS_C0010132">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>ROLE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010132</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="153" parent="50" name="COUNTRY_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(19)|0</data-type>
+    </column>
+    <column id="154" parent="50" name="COUNTRY_NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(100)|0</data-type>
+    </column>
+    <index id="155" parent="50" name="SYS_C0010135">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92880</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>COUNTRY_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="156" parent="50" name="SYS_C0010135">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>COUNTRY_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010135</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="157" parent="51" name="USER_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="158" parent="51" name="USER_FIRSTNAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="159" parent="51" name="USER_LASTNAME">
+      <data-type>VARCHAR2(30)|0</data-type>
+    </column>
+    <column id="160" parent="51" name="USER_LOGINNAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="161" parent="51" name="USER_EMAIL">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(300)|0</data-type>
+    </column>
+    <column id="162" parent="51" name="USER_PASSWORD">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="163" parent="51" name="USER_COUNTRY">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(19)|0</data-type>
+    </column>
+    <column id="164" parent="51" name="USER_BIRTHDATE">
+      <mandatory>1</mandatory>
+      <data-type>TIMESTAMP(6)|0</data-type>
+    </column>
+    <column id="165" parent="51" name="USER_GENDER">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(10)|0</data-type>
+    </column>
+    <column id="166" parent="51" name="USER_PHONENUMBER">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(20)|0</data-type>
+    </column>
+    <column id="167" parent="51" name="USER_DESCRIPTION">
+      <data-type>VARCHAR2(3000)|0</data-type>
+    </column>
+    <column id="168" parent="51" name="USER2USERTYPE">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="169" parent="51" name="COUNTRY_USER_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(19)|0</data-type>
+    </column>
+    <column id="170" parent="51" name="USER_TYPE_ID">
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <index id="171" parent="51" name="SYS_C0010146">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92882</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>USER_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="172" parent="51" name="SYS_C0010146">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>USER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010146</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="173" parent="51" name="FK736EPQIVP2DACJ1D642Y1S68W">
+      <modified-timestamp>2016-10-07.10:15:40</modified-timestamp>
+      <columns>USER_COUNTRY</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.TONGANGE_COUNTRY8.SYS_C0010135</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="174" parent="51" name="FKEX2GM7ILOE0HTQSFS0LWR35L3">
+      <modified-timestamp>2016-10-07.10:15:41</modified-timestamp>
+      <columns>USER2USERTYPE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.TONGANGE_USERTYPE8.SYS_C0010149</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="175" parent="51" name="FKVATKMW91XAIQH22OE7DWG03T">
+      <modified-timestamp>2016-10-07.10:15:41</modified-timestamp>
+      <columns>COUNTRY_USER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.TONGANGE_COUNTRY8.SYS_C0010135</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="176" parent="51" name="FKTESPSU6MIC1R3Y2HUU3T8TGJ3">
+      <modified-timestamp>2016-10-07.10:15:41</modified-timestamp>
+      <columns>USER_TYPE_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.TONGANGE_USERTYPE8.SYS_C0010149</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="177" parent="52" name="USER_ID">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(255)|0</data-type>
+    </column>
+    <column id="178" parent="52" name="USER_TYPE_NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <index id="179" parent="52" name="SYS_C0010149">
+      <name-surrogate>1</name-surrogate>
+      <object-id>92884</object-id>
+      <created-timestamp>2016-10-07.10:14:31</created-timestamp>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>USER_ID</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+      <tablespace-name>USERS</tablespace-name>
+    </index>
+    <key id="180" parent="52" name="SYS_C0010149">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2016-10-07.10:14:31</modified-timestamp>
+      <columns>USER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C0010149</underlying-index>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

@@ -112,6 +112,19 @@ public class UserDAOImpl
         return result;
     }
     //endregion
+
+    //region 查询所有用户的值
+
+    @Override
+    public List<User> findAll()
+    {
+        return getSessionFactory()
+                  .openSession()
+                  .createQuery("from User ")
+                  .list();
+    }
+
+    //endregion
 }
 
 

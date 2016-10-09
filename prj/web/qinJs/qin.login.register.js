@@ -48,6 +48,7 @@ function doLogin()
                     if (msg == "success")
                     {
                         alert("登录成功!");
+                        window.location = "/javaee8/doMainView.com";
                     }
                     else
                     {

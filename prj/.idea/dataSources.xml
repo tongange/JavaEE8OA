@@ -15,5 +15,17 @@
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@//192.168.0.105:1521/orcl</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="orcl12@localhost" uuid="34d65901-0582-4bb0-adef-4bc4f1df386d">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@//localhost:1521/orcl</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="orcl_tongange" uuid="2aec9e00-48c3-480c-a9c7-0d7f0bc510a8">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@//localhost:1521/orcl</jdbc-url>
+    </data-source>
   </component>
 </project>

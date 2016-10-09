@@ -500,10 +500,6 @@ public class FindJobPerson implements SuperEntity8<Integer>
     }
     //endregion
 
-    //region 公司行业
-    /** 公司行业(对话框)*/
-    //endregion
-
     //region 公司性质
     /**
      * 公司性质(下拉框)
