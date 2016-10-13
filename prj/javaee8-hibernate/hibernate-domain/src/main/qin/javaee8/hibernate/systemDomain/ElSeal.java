@@ -28,7 +28,7 @@ public class ElSeal implements SuperEntity8<Integer>
     /**
      * @param elSeal_title       标题
      * @param elSeal_description 描述
-     * @param elSeal_CreateTime        创建时间
+     * @param elSeal_CreateTime  创建时间
      * @param elSeal_path        路径
      */
     public ElSeal(String elSeal_title, String elSeal_description, Date elSeal_CreateTime, String elSeal_path)

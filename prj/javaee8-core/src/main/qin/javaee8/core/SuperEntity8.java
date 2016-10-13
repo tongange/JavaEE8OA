@@ -17,12 +17,14 @@ public interface SuperEntity8<T extends Serializable>
           Comparator<T>, Comparable<T>
 {
     @Override
-    default int compare(T o1, T o2) {
+    default int compare(T o1, T o2)
+    {
         return 1;
     }
 
     @Override
-    default int compareTo(T o) {
+    default int compareTo(T o)
+    {
         return 1;
     }
 }

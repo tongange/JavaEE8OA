@@ -113,18 +113,11 @@ public class UserDAOImpl
     }
     //endregion
 
-    //region 查询所有用户的值
-
     @Override
-    public List<User> findAll()
+    public Class<User> getEntityClass()
     {
-        return getSessionFactory()
-                  .openSession()
-                  .createQuery("from User ")
-                  .list();
+        return User.class;
     }
-
-    //endregion
 }
 
 

@@ -14,6 +14,10 @@
     <table id="tb_user"></table>
     <br>
     <table id="tb_role"></table>
+    <br>
+    <table id="tb_elSeal"></table>
+    <br>
+    <table id="tb_findJobPerson"></table>
 </div>
 </body>
 

@@ -189,7 +189,7 @@
         <!-- @param  jobPersonSchoolRecord                        学历-->
         <property name="jobPersonSchoolRecord" length="4"/>
 
-        <!-- @param  jobPersonProjectName                         项目描述-->
+        <!-- @param  jobPersonProjectName                         项目名称-->
         <property name="jobPersonProjectName" length="3000"/>
 
         <!-- @param  jobPersonProjectCompanyName                  公司名称-->

@@ -1,0 +1,1 @@
+package qin.javaee8.core;/** * 实体类支持接口 * * @param <T> SuperEntity8子类的实体类 * @author qinzhengying * @since 1.8 */public interface EntityClassSupport<T extends SuperEntity8>{    /**     * 获取实体类     *     * @return 返回任意实体类必须实现SuperEntity8     */    Class<T> getEntityClass();}

@@ -1,8 +1,8 @@
 package qin.javaee8.hibernate.dao;
 
-import qin.javaee65.core.hibernate.dao.JavaEE65DAOSupport;
 import qin.javaee65.exceptions.JavaEE6Exception;
 import qin.javaee8.core.JavaEE8BaseSupport;
+import qin.javaee8.core.JavaEE8DAOSupport;
 import qin.javaee8.hibernate.domain.User;
 
 import java.util.Map;
@@ -14,7 +14,7 @@ import java.util.Map;
  * @since 1.8
  */
 @SuppressWarnings("all")
-public interface UserDAO extends JavaEE65DAOSupport<User, Integer>,
+public interface UserDAO extends JavaEE8DAOSupport<User, Integer>,
           JavaEE8BaseSupport
 {
     //region 查找用户(登录功能)

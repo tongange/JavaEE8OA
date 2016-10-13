@@ -1,6 +1,5 @@
 package qin.test;
 
-import org.junit.AfterClass;
 import org.junit.Test;
 import qin.javaee8.core.JavaEE8BaseSupport;
 import qin.javaee8.hibernate.domain.Gender;
@@ -16,6 +15,104 @@ public class MakeTable implements JavaEE8BaseSupport
 
     private static final JavaEE8Test j8 = new JavaEE8Test();
 
+    //region 3
+    @Test
+    public void makeFindJobPersonDataGrid()
+    {
+        String s = j8Tools.printDataGrid
+                  (
+                            "用户招聘详细信息", "tb_findJobPerson", "url", 3000, 700,
+                            true, true,
+                            new String[]
+                                      {
+                                                "findJobPerson_id", "jobPersonName", "jobPersonGender", "jobPersonOldCompanyName", "jobPersonOldJob", "jobPersonStartJobTime", "jobPersonJobName", "jobPersonNowCity", "jobPersonBirth",
+                                                "jobPersonIsMarried", "jobPersonMobile", "jobPersonEmail", "jobPersonCountry", "jobPersonLocation", "jobPersonWantJob", "jobPersonFunction", "jobPersonWantLocation", "jobPersonWantsYearSalary",
+                                                "jobPersonOldYearSalary", "jobPersonExperienceCompanyName", "jobPersonExperienceCompanyNature", "jobPersonExperienceCompanyPeopleNumber", "jobPersonExperienceCompanySimpleIntroduction",
+                                                "jobPersonExperienceCompanyJobName", "jobPersonExperienceCompanyLocation", "jobPersonExperienceCompanyUnderlingPeople", "jobPersonExperienceCompanyJobTime", "jobPersonExperienceCompanyDutyOfWork",
+                                                "jobPersonExperienceCompanyJobReportToWho", "jobPersonExperienceCompanyMonthSalary", "jobPersonExperienceCompanyScore", "jobPersonSchoolName", "jobPersonMajorName", "jobPersonSchoolStudyTime",
+                                                "jobPersonSchoolRecord", "jobPersonProjectName", "jobPersonProjectCompanyName", "jobPersonProjectFunction", "jobPersonProjectDoTime", "jobPersonProjectDescription", "jobPersonProjectDuty",
+                                                "jobPersonProjectScore", "jobPersonMyIntroduction", "jobPersonExperienceCompanyDepartment"
+                                      },
+                            new String[]
+                                      {
+                                                "招聘人员编号", "招聘人员名字", "招聘人员性别", "以前公司名称", "当前行业职能", "开始工作年份", "职位名称", "当前城市", "出生年份", "婚姻状况", "手机", "邮箱", "国籍", "户口", "期望行业", "期望职能", "期望地点", "期望年薪",
+                                                "以前年薪", "公司名称", "公司性质", "公司规模", "公司简介", "职位名称", "工作地点", "下属人数", "任职时间", "工作职责", "汇报对象", "月薪", "工作业绩", "学校名称", "专业名称", "就读时间", "学历", "项目名称", "公司名称", "项目职务",
+                                                "项目时间", "项目描述", "项目职责", "项目业绩", "自我评价", "所在部门"
+                                      },
+                            new Integer[]
+                                      {
+                                                400, 400, 400, 400, 400,
+                                                400, 400, 400, 400, 400,
+                                                400, 400, 400, 400, 400,
+                                                400, 400, 400, 400, 400,
+                                                400, 400, 400, 400, 400,
+                                                400, 400, 400, 400, 400,
+                                                400, 400, 400, 400, 400,
+                                                400, 400, 400, 400, 400,
+                                                400, 400, 400, 400, 400
+                                      }
+                  );
+        j8Tools.superInfo(s);
+    }
+
+    @Test
+    public void makeFindJobPersonDataGrid2()
+    {
+        String s = j8Tools.printDataGrid
+                  (
+                            "用户招聘详细信息", "tb_findJobPerson", "url", 3000, 700,
+                            true, true,
+                            new String[]
+                                      {
+                                                "jobPersonName", "jobPersonGender", "jobPersonStartJobTime",
+                                                "jobPersonJobName", "jobPersonNowCity", "jobPersonBirth",
+                                                "jobPersonMobile", "jobPersonEmail", "jobPersonCountry",
+                                                "jobPersonLocation", "jobPersonWantJob", "jobPersonFunction",
+                                                "jobPersonWantLocation", "jobPersonWantsYearSalary"
+                                      },
+                            new String[]
+                                      {
+                                                "招聘人员名字", "招聘人员性别", "开始工作年份",
+                                                "职位名称", "当前城市", "出生年份",
+                                                "手机", "邮箱", "国籍",
+                                                "户口", "期望行业", "期望职能",
+                                                "期望地点", "期望年薪"
+                                      },
+                            new Integer[]
+                                      {
+                                                300, 200, 400, 400, 300, 300, 200, 300, 300, 300, 300, 300, 200, 300
+                                      }
+                  );
+        j8Tools.superInfo(s);
+    }
+
+    @Test
+    public void makeFindJobPersonDataGrid3()
+    {
+        String s = j8Tools.printDataGrid
+                  (
+                            "用户职业意向信息", "tb_findJobWants", "\"/findJobPerson/findJobWants.com\"", 1500, 700,
+                            true, true,
+                            new String[]
+                                      {
+                                                "jobPersonWantJob", "jobPersonFunction", "jobPersonWantLocation",
+                                                "jobPersonWantsYearSalary", "jobPersonOldYearSalary"
+                                      },
+                            new String[]
+                                      {
+                                                "期望行业", "期望职能", "期望地点",
+                                                "期望年薪", "目前年薪"
+                                      },
+                            new Integer[]
+                                      {
+                                                300, 300, 300, 300, 300
+                                      }
+                  );
+        j8Tools.superInfo(s);
+    }
+    //endregion
+
+    //region 2
     @Test
     public void saveRole()
     {
@@ -23,7 +120,7 @@ public class MakeTable implements JavaEE8BaseSupport
         j8.session.save(role);
     }
 
-    @AfterClass
+    //@org.junit.AfterClass
     public static void end()
     {
         j8.transaction.commit();
@@ -53,6 +150,32 @@ public class MakeTable implements JavaEE8BaseSupport
                                                 60, 100, 100, 100,
                                                 300, 300, 300, 300,
                                                 300, 300, 300
+                                      }
+                  );
+        j8Tools.superInfo(s);
+    }
+
+    @Test
+    public void makeDataGrid1()
+    {
+        String s = j8Tools.printDataGrid
+                  (
+                            "电子公章详细信息", "tb_elSeal", "url", 1024, 768,
+                            true, true,
+                            new String[]
+                                      {
+                                                "elSeal_id", "elSeal_title", "elSeal_description",
+                                                "elSeal_CreateTime", "elSeal_path", "elSeal_employee"
+                                      },
+                            new String[]
+                                      {
+                                                "公章编号", "公章标题", "公章描述",
+                                                "公章创建时间", "公章路径", "公章所对应的员工"
+                                      },
+                            new Integer[]
+                                      {
+                                                100, 300, 400,
+                                                400, 400, 500
                                       }
                   );
         j8Tools.superInfo(s);
@@ -123,6 +246,7 @@ public class MakeTable implements JavaEE8BaseSupport
 
         j8.transaction.commit();
     }
+    //endregion
 
     //region 1
     private void saveObjects(Object... objects)

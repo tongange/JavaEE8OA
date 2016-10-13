@@ -1,3 +1,37 @@
+
+    //region 基本基本信息注释
+        /*
+        //region 显示基本信息
+        @RequestMapping(value = "/showBasicInfo")
+        public void showBasicInfo(HttpServletResponse response, HttpServletRequest request)
+        {
+            List<Object[]> findJobPersonInfo = null;
+
+            try
+            {
+                FindJobPersonDAO fpd = (FindJobPersonDAO) new
+                          ClassPathXmlApplicationContext("applicationContext.xml")
+                          .getBean("findJobPersonDAO8");
+                fpd.findBasicInfo();
+                findJobPersonInfo = (List<Object[]>) findJobPersonService.findBasicInfo();
+
+                request.setAttribute("findJobPersonInfo", findJobPersonInfo);
+
+                actionFlag = true;
+            }
+            catch (Exception ex)
+            {
+                actionFlag = false;
+            }
+            finally
+            {
+                j8Tools.doCheck(actionFlag);
+            }
+        }
+        //endregion
+        */
+    //endregion
+
 ===========================index.jsp===========================
 
    <%--

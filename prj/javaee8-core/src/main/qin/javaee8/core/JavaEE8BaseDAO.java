@@ -7,6 +7,7 @@ import qin.javaee65.core.hibernate.dao.impl.JavaEE65DAOSupportImpl;
 
 import javax.annotation.Resource;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * JavaEE8数据访问层实现类
@@ -20,7 +21,7 @@ import java.io.Serializable;
 @SuppressWarnings("all")
 public class JavaEE8BaseDAO<T, ID extends Serializable>
           extends JavaEE65DAOSupportImpl<T, ID>
-          implements JavaEE8BaseSupport
+          implements JavaEE8DAOSupport<T, ID>
 {
     //region 获取配置文件和日志
 
@@ -53,6 +54,7 @@ public class JavaEE8BaseDAO<T, ID extends Serializable>
     }
     //endregion
 
+    //region 注入Session工厂
     private SessionFactory sessionFactory;
 
     @Override
@@ -67,6 +69,18 @@ public class JavaEE8BaseDAO<T, ID extends Serializable>
     {
         this.sessionFactory = sessionFactory;
     }
+    //endregion
+
+    //region 查询全部信息
+    @Override
+    public List<T> findAll()
+    {
+        return getSessionFactory()
+                  .openSession()
+                  .createQuery("from " + getEntityClass().getSimpleName())
+                  .list();
+    }
+    //endregion
 }
 
 

@@ -1,0 +1,1 @@
+package qin.javaee8.hibernate.dao;import qin.javaee8.core.JavaEE8DAOSupport;import qin.javaee8.hibernate.systemDomain.ElSeal;/** * 电子公章数据访问层 * * @author qinzhengying * @since 1.8 */@SuppressWarnings("all")public interface ElSealDAO extends JavaEE8DAOSupport<ElSeal, Integer>{}
