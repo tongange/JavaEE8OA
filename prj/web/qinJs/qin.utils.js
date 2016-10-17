@@ -1,0 +1,1 @@
+/* 工具js *///region 输出任意信息/** * 输出任意信息 * * @param obj 需要输出信息变量 */function printMsg(obj){    console.log("输出的对象值为:[" + obj + ']');}//endregion

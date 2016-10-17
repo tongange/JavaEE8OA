@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/mysql_backup/OYJR_RZHX_TONGANGE_COUNTRY8.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/oracle12cSrc/c2/chapter2_1.sql" dialect="Oracle" />
   </component>
 </project>

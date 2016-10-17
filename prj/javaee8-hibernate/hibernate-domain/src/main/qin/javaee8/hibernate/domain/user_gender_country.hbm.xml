@@ -16,13 +16,13 @@
     <!-- 故乡实体类 -->
     <class name="Country" table="tongange_country8">
         <id name="id" column="country_id" type="java.lang.Long">
-            <generator class="increment"/>
+            <generator class="sequence"/>
         </id>
 
-        <property name="country_name" not-null="true" length="100"/>
+        <property name="country_name" length="100"/>
 
         <set name="userSet" cascade="delete">
-            <key not-null="true" column="country_user_id"/>
+            <key column="country_user_id"/>
             <one-to-many class="User"/>
         </set>
     </class>
@@ -30,32 +30,32 @@
     <!-- 用户实体类 -->
     <class name="User" table="tongange_user8">
         <id name="id" column="user_id" type="java.lang.Integer">
-            <generator class="increment"/>
+            <generator class="sequence"/>
         </id>
 
         <!-- 姓名第一个名称 -->
-        <property name="user_firstName" length="20" not-null="true"/>
+        <property name="user_firstName" length="20"/>
 
         <!-- 姓名末尾 -->
         <property name="user_lastName" length="30"/>
 
         <!-- 登录名/用户名 -->
-        <property name="user_loginName" length="20" not-null="true"/>
+        <property name="user_loginName" length="20"/>
 
         <!-- 邮箱 -->
-        <property name="user_email" length="300" not-null="true"/>
+        <property name="user_email" length="300"/>
 
         <!-- 密码 -->
-        <property name="user_password" length="20" not-null="true"/>
+        <property name="user_password" length="20"/>
 
         <!-- 国家 -->
-        <many-to-one name="user_country" not-null="true" class="Country" cascade="delete"/>
+        <many-to-one name="user_country" class="Country" cascade="delete"/>
 
         <!-- 出生年月 -->
-        <property name="user_birthdate" not-null="true" type="java.util.Date"/>
+        <property name="user_birthdate" type="java.util.Date"/>
 
         <!-- 性别 -->
-        <property name="user_gender" not-null="true">
+        <property name="user_gender">
             <type name="org.hibernate.type.EnumType">
                 <param name="enumClass">qin.javaee8.hibernate.domain.Gender</param>
                 <param name="type">12</param>
@@ -63,7 +63,7 @@
         </property>
 
         <!-- 联系方式 -->
-        <property name="user_phoneNumber" length="20" not-null="true"/>
+        <property name="user_phoneNumber" length="20"/>
 
         <!-- 描述 -->
         <property name="user_description" length="3000"/>
@@ -79,7 +79,7 @@
             <generator class="uuid"/>
         </id>
 
-        <property name="user_type_name" length="10" not-null="true"/>
+        <property name="user_type_name" length="10"/>
 
         <set name="userSet" cascade="delete">
             <key column="user_type_id"/>

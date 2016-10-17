@@ -9,3 +9,5 @@
 <link rel="stylesheet" href="<c:url value="/jsLib/easyui15/themes/bootstrap/easyui.css" />">
 <link rel="stylesheet" href="<c:url value="/jsLib/easyui15/themes/color.css" />">
 <link rel="stylesheet" href="<c:url value="/jsLib/easyui15/themes/icon.css" />">
+
+<script type="text/javascript" src="<c:url value="/qinJs/qin.utils.js"/> "></script>

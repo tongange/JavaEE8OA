@@ -6,8 +6,10 @@
 <hibernate-configuration>
 
     <session-factory>
+
         <mapping resource="qin/javaee8/hibernate/domain/user_gender_country.hbm.xml"/>
         <mapping resource="qin/javaee8/hibernate/role_elSeal_findJobPerson_department_employee.xml"/>
+
     </session-factory>
 
 </hibernate-configuration>

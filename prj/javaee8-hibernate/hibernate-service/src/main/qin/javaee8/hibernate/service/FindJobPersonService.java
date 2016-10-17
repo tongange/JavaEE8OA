@@ -40,4 +40,8 @@ public interface FindJobPersonService
     //region 查询职业意向
     List<?> findJobWants();
     //endregion
+
+    //region 查询招聘人员详细信息
+    List<FindJobPerson> findDetails(FindJobPerson f);
+    //endregion
 }

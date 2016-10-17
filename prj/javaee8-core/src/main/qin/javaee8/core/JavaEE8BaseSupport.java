@@ -3,6 +3,7 @@ package qin.javaee8.core;
 import qin.javaee65.core.JavaEE6BaseSupport;
 import qin.javaee65.core.Objects;
 
+import java.util.Calendar;
 import java.util.Collection;
 
 /**
@@ -56,4 +57,32 @@ public interface JavaEE8BaseSupport extends JavaEE6BaseSupport
      * 实例化最终工具类变量
      */
     JavaEE8BaseSupportImpl j8Tools = new JavaEE8BaseSupportImpl("");
+
+    //region 获取日历类
+    /**
+     * 获取日历类
+     */
+    Calendar calendar = Calendar.getInstance();
+    //endregion
+
+    //region 全角空格
+    /**
+     * 全角空格
+     */
+    String _nbsp = "　　　　　　　　　　";
+    //endregion
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %><html><head>    <jsp:include page="/WEB-INF/include_bootstrap.jsp"></jsp:include></head><body>showDetails</body></html>

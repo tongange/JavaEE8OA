@@ -48,8 +48,18 @@ public class FindJobPersonServiceImpl
     //endregion
 
     //region 查询职业意向
-    @Override public  List<?> findJobWants() {
+    @Override
+    public List<?> findJobWants()
+    {
         return findJobPersonDAO.findJobWants();
+    }
+    //endregion
+
+    //region 查询招聘人员详细信息
+    @Override
+    public List<FindJobPerson> findDetails(FindJobPerson f)
+    {
+        return findJobPersonDAO.findDetails(f);
     }
     //endregion
 }

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="j8mysql">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="javaee8">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sakila"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="world"/>
+    <table id="8" parent="1" name="oa_qin_department8"/>
+    <table id="9" parent="1" name="oa_qin_department_parent8"/>
+    <table id="10" parent="1" name="oa_qin_elseal8"/>
+    <table id="11" parent="1" name="oa_qin_employee8"/>
+    <table id="12" parent="1" name="oa_qin_employee_elseal8"/>
+    <table id="13" parent="1" name="oa_qin_findjobperson8"/>
+    <table id="14" parent="1" name="oa_qin_findjobperson_dep8"/>
+    <table id="15" parent="1" name="oa_qin_role8"/>
+    <table id="16" parent="1" name="tongange_country8"/>
+    <table id="17" parent="1" name="tongange_user8"/>
+    <table id="18" parent="1" name="tongange_usertype8"/>
+    <column id="19" parent="8" name="department_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="20" parent="8" name="departmentName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="21" parent="8" name="departmentDescription">
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <column id="22" parent="8" name="department_childrenSetKey">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="23" parent="8" name="fk_departmentChildrenSet">
+      <columns>department_childrenSetKey</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="24" parent="8" name="PRIMARY">
+      <columns>department_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="25" parent="8" name="fk_departmentChildrenSet">
+      <columns>department_childrenSetKey</columns>
+      <ref-key>PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="26" parent="9" name="qin_department_parent8IdKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="27" parent="9" name="qin_dep_parentMany2One">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="28" parent="9" name="fk_dep_parentMany2One">
+      <columns>qin_dep_parentMany2One</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="29" parent="9" name="PRIMARY">
+      <columns>qin_department_parent8IdKey</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="30" parent="9" name="fk_depa_parentKey">
+      <columns>qin_department_parent8IdKey</columns>
+      <ref-key>~.oa_qin_department8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="31" parent="9" name="fk_dep_parentMany2One">
+      <columns>qin_dep_parentMany2One</columns>
+      <ref-key>~.oa_qin_department8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="32" parent="10" name="elSeal_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="33" parent="10" name="elSeal_title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="34" parent="10" name="elSeal_description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <column id="35" parent="10" name="elSeal_CreateTime">
+      <data-type>datetime(6)|0</data-type>
+    </column>
+    <column id="36" parent="10" name="elSeal_path">
+      <mandatory>1</mandatory>
+      <data-type>varchar(540)|0</data-type>
+    </column>
+    <key id="37" parent="10" name="PRIMARY">
+      <columns>elSeal_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="38" parent="11" name="employee_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="39" parent="11" name="employeeName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="40" parent="11" name="employeeGender">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="41" parent="11" name="employeeAge">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="42" parent="11" name="employeeDescription">
+      <mandatory>1</mandatory>
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <key id="43" parent="11" name="PRIMARY">
+      <columns>employee_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="44" parent="12" name="qin_employee_elSealKey">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="45" parent="12" name="qin_employee_elSealMany2One">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="46" parent="12" name="fk_employeeElSealMany2One">
+      <columns>qin_employee_elSealMany2One</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="47" parent="12" name="PRIMARY">
+      <columns>qin_employee_elSealKey</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="48" parent="12" name="fk_employeeElSealKey">
+      <columns>qin_employee_elSealKey</columns>
+      <ref-key>~.oa_qin_employee8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="49" parent="12" name="fk_employeeElSealMany2One">
+      <columns>qin_employee_elSealMany2One</columns>
+      <ref-key>~.oa_qin_employee8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="50" parent="13" name="findJobPerson_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="51" parent="13" name="jobPersonName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <column id="52" parent="13" name="jobPersonGender">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="53" parent="13" name="jobPersonOldCompanyName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="54" parent="13" name="jobPersonOldJob">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="55" parent="13" name="jobPersonStartJobTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime(6)|0</data-type>
+    </column>
+    <column id="56" parent="13" name="jobPersonJobName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="57" parent="13" name="jobPersonNowCity">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <column id="58" parent="13" name="jobPersonBirth">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="59" parent="13" name="jobPersonIsMarried">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="60" parent="13" name="jobPersonMobile">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="61" parent="13" name="jobPersonEmail">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="62" parent="13" name="jobPersonCountry">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="63" parent="13" name="jobPersonLocation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="64" parent="13" name="jobPersonWantJob">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="65" parent="13" name="jobPersonFunction">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="66" parent="13" name="jobPersonWantLocation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="67" parent="13" name="jobPersonWantsYearSalary">
+      <mandatory>1</mandatory>
+      <data-type>double|0</data-type>
+    </column>
+    <column id="68" parent="13" name="jobPersonOldYearSalary">
+      <mandatory>1</mandatory>
+      <data-type>double|0</data-type>
+    </column>
+    <column id="69" parent="13" name="jobPersonExperienceCompanyName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="70" parent="13" name="jobPerExpCompanyNature">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="71" parent="13" name="jobPernExpCompanyPeopleNumber">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="72" parent="13" name="jobPerExpComSimpleIntroduction">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="73" parent="13" name="jobPerExpCompanyJobName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="74" parent="13" name="jobPersonExpCompanyLocation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="75" parent="13" name="jobPerExpComUnderlingPeople">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="76" parent="13" name="jobPerExpCompanyJobTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="77" parent="13" name="jobPeExpCompanyDutyOfWork">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="78" parent="13" name="jobPerExpCompanyJobReportToWho">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="79" parent="13" name="jobPerExpCompanyMonthSalary">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="80" parent="13" name="jobPerExperienceCompanyScore">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="81" parent="13" name="jobPersonSchoolName">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="82" parent="13" name="jobPersonMajorName">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="83" parent="13" name="jobPersonSchoolStudyTime">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="84" parent="13" name="jobPersonSchoolRecord">
+      <data-type>varchar(4)|0</data-type>
+    </column>
+    <column id="85" parent="13" name="jobPersonProjectName">
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <column id="86" parent="13" name="jobPersonProjectCompanyName">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="87" parent="13" name="jobPersonProjectFunction">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="88" parent="13" name="jobPersonProjectDoTime">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="89" parent="13" name="jobPersonProjectDescription">
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <column id="90" parent="13" name="jobPersonProjectDuty">
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <column id="91" parent="13" name="jobPersonProjectScore">
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <column id="92" parent="13" name="jobPersonMyIntroduction">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="93" parent="13" name="oa_qin_role_personSetKey">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="94" parent="13" name="department_findJobPersonIdKey">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="95" parent="13" name="fk_departmentJobPersonSet">
+      <columns>department_findJobPersonIdKey</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="96" parent="13" name="fk_qin_role_personSetKey">
+      <columns>oa_qin_role_personSetKey</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="97" parent="13" name="PRIMARY">
+      <columns>findJobPerson_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="98" parent="13" name="fk_qin_role_personSetKey">
+      <columns>oa_qin_role_personSetKey</columns>
+      <ref-key>~.oa_qin_role8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="99" parent="13" name="fk_departmentJobPersonSet">
+      <columns>department_findJobPersonIdKey</columns>
+      <ref-key>~.oa_qin_department8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="100" parent="14" name="qin_findJobPerson_depKey">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="101" parent="14" name="qin_findJobPerson_depMany2One">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="102" parent="14" name="fk_findJobPerson_depMany2One">
+      <columns>qin_findJobPerson_depMany2One</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="103" parent="14" name="PRIMARY">
+      <columns>qin_findJobPerson_depKey</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="104" parent="14" name="fk_findJobPerson_deparmentKey">
+      <columns>qin_findJobPerson_depKey</columns>
+      <ref-key>~.oa_qin_findjobperson8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="105" parent="14" name="fk_findJobPerson_depMany2One">
+      <columns>qin_findJobPerson_depMany2One</columns>
+      <ref-key>~.oa_qin_department8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="106" parent="15" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="107" parent="15" name="role_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="108" parent="15" name="role_description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <column id="109" parent="15" name="role_isFull">
+      <mandatory>1</mandatory>
+      <data-type>bit(1)|0</data-type>
+    </column>
+    <column id="110" parent="15" name="role_needPersons">
+      <mandatory>1</mandatory>
+      <data-type>smallint(6)|0</data-type>
+    </column>
+    <column id="111" parent="15" name="role_publishTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime(6)|0</data-type>
+    </column>
+    <column id="112" parent="15" name="role_endTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime(6)|0</data-type>
+    </column>
+    <key id="113" parent="15" name="PRIMARY">
+      <columns>role_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="114" parent="16" name="country_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="115" parent="16" name="country_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="116" parent="16" name="PRIMARY">
+      <columns>country_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="117" parent="17" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="118" parent="17" name="user_firstName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="119" parent="17" name="user_lastName">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="120" parent="17" name="user_loginName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="121" parent="17" name="user_email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(300)|0</data-type>
+    </column>
+    <column id="122" parent="17" name="user_password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="123" parent="17" name="user_country">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="124" parent="17" name="user_birthdate">
+      <mandatory>1</mandatory>
+      <data-type>datetime(6)|0</data-type>
+    </column>
+    <column id="125" parent="17" name="user_gender">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="126" parent="17" name="user_phoneNumber">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="127" parent="17" name="user_description">
+      <data-type>varchar(3000)|0</data-type>
+    </column>
+    <column id="128" parent="17" name="user2userType">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="129" parent="17" name="country_user_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="130" parent="17" name="user_type_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="131" parent="17" name="FK736epqivp2dacj1d642y1s68w">
+      <columns>user_country</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="132" parent="17" name="FKex2gm7iloe0htqsfs0lwr35l3">
+      <columns>user2userType</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="133" parent="17" name="FKtespsu6mic1r3y2huu3t8tgj3">
+      <columns>user_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="134" parent="17" name="FKvatkmw91xaiqh22oe7dwg03t">
+      <columns>country_user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="135" parent="17" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="136" parent="17" name="FK736epqivp2dacj1d642y1s68w">
+      <columns>user_country</columns>
+      <ref-key>~.tongange_country8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="137" parent="17" name="FKex2gm7iloe0htqsfs0lwr35l3">
+      <columns>user2userType</columns>
+      <ref-key>~.tongange_usertype8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="138" parent="17" name="FKvatkmw91xaiqh22oe7dwg03t">
+      <columns>country_user_id</columns>
+      <ref-key>~.tongange_country8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="139" parent="17" name="FKtespsu6mic1r3y2huu3t8tgj3">
+      <columns>user_type_id</columns>
+      <ref-key>~.tongange_usertype8.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="140" parent="18" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="141" parent="18" name="user_type_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <key id="142" parent="18" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

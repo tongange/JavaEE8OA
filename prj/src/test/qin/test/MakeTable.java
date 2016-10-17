@@ -15,6 +15,37 @@ public class MakeTable implements JavaEE8BaseSupport
 
     private static final JavaEE8Test j8 = new JavaEE8Test();
 
+    @Test
+    public void make()
+    {
+
+    }
+
+    //region 4
+    @Test
+    public void makeDataGrid4()
+    {
+        String s = j8Tools.printDataGrid
+                  (
+                            "招聘人员简略信息", "tb_simpleJobPerson", "/findJobPerson/showSimpleInfo.com", 1024, 768,
+                            true, true,
+                            new String[]
+                                      {
+                                                "id", "jobPersonName"
+                                      },
+                            new String[]
+                                      {
+                                                "招聘人员编号", "招聘人员名字"
+                                      },
+                            new Integer[]
+                                      {
+                                                200, 300
+                                      }
+                  );
+        j8Tools.superInfo(s);
+    }
+    //endregion
+
     //region 3
     @Test
     public void makeFindJobPersonDataGrid()
@@ -120,7 +151,7 @@ public class MakeTable implements JavaEE8BaseSupport
         j8.session.save(role);
     }
 
-    //@org.junit.AfterClass
+    @org.junit.AfterClass
     public static void end()
     {
         j8.transaction.commit();

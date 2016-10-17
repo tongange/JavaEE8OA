@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Oracle - @192.168.0.105" uuid="7c2b8e9d-eef0-4c37-80e4-51a5b7a111ea">
+    <data-source source="LOCAL" name="远程" uuid="7c2b8e9d-eef0-4c37-80e4-51a5b7a111ea">
       <driver-ref>oracle</driver-ref>
       <synchronize>true</synchronize>
       <configured-by-url>true</configured-by-url>
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
-      <jdbc-url>jdbc:oracle:thin:@//192.168.0.105:1521/orcl</jdbc-url>
+      <jdbc-url>jdbc:oracle:thin:@//192.168.0.100:1521/orcl</jdbc-url>
     </data-source>
     <data-source source="LOCAL" name="orcl12c_src" uuid="c9912327-9d84-4551-a00e-1c6cd4dd46fe">
       <driver-ref>oracle</driver-ref>
@@ -26,6 +26,20 @@
       <synchronize>true</synchronize>
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@//localhost:1521/orcl</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="j8mysql" uuid="391964db-cd9c-478b-b415-83701be0ff04">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/javaee8</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
     </data-source>
   </component>
 </project>
