@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 指定包名, 禁用懒加载 -->
+<hibernate-mapping auto-import="true" default-lazy="false"
+                   package="qin.javaee8.hibernate.domain">
+
+    <class name="CompanyIndustry" table="qin_CompanyIndustry8_2">
+        <id name="id" column="indu_id">
+            <generator class="sequence"/>
+        </id>
+
+        <!-- 公司行业 -->
+        <property name="industryName" length="30"/>
+
+        <set name="roleSet" table="qin_company_role8_2">
+            <key column="Industry_roleSet_id"></key>
+            <one-to-many class="CompanyRole"/>
+        </set>
+    </class>
+
+    <class name="CompanyRole" table="qin_CompanyRole8_2">
+        <id name="id" column="role_id">
+            <generator class="sequence"/>
+        </id>
+
+        <!-- 岗位名称 -->
+        <property name="role" column="company_role" length="60"/>
+
+        <join table="qin_Company_Role8_2">
+            <key column="role_id"></key>
+            <many-to-one name="companyIndustry"/>
+        </join>
+    </class>
+
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

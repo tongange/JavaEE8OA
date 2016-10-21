@@ -44,4 +44,9 @@ public interface FindJobPersonService
     //region 查询招聘人员详细信息
     List<FindJobPerson> findDetails(FindJobPerson f);
     //endregion
+
+    //region 查询所有公司名称
+    List<String> findAllCompanyNames() throws JavaEE6Exception;
+    //endregion
+
 }

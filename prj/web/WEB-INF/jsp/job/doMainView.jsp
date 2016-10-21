@@ -1,0 +1,1 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %><head>    <jsp:include page="/WEB-INF/include_easyui.jsp"></jsp:include></head><body class="easyui-layout"><div data-options="region:'north',title:'导航栏',split:true" style="height:100px;"></div><div data-options="region:'center',title:'主页'" style="padding:5px;background:#eee;"></div></body>

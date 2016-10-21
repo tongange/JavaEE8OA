@@ -9,6 +9,8 @@
 
         <mapping resource="qin/javaee8/hibernate/domain/user_gender_country.hbm.xml"/>
         <mapping resource="qin/javaee8/hibernate/role_elSeal_findJobPerson_department_employee.xml"/>
+        <mapping class="qin.javaee8.hibernate.domain.CompanyName"/>
+        <mapping resource="qin/javaee8/hibernate/domain/company.xml"/>
 
     </session-factory>
 

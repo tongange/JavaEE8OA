@@ -2,6 +2,7 @@ package qin.javaee8.hibernate.service.impl;
 
 import org.springframework.stereotype.Service;
 import qin.javaee65.core.hibernate.service.impl.JavaEE65ServiceSupportImpl;
+import qin.javaee65.exceptions.JavaEE6Exception;
 import qin.javaee8.hibernate.dao.FindJobPersonDAO;
 import qin.javaee8.hibernate.service.FindJobPersonService;
 import qin.javaee8.hibernate.systemDomain.FindJobPerson;
@@ -60,6 +61,14 @@ public class FindJobPersonServiceImpl
     public List<FindJobPerson> findDetails(FindJobPerson f)
     {
         return findJobPersonDAO.findDetails(f);
+    }
+    //endregion
+
+    //region 查询所有公司名称
+    @Override
+    public List<String> findAllCompanyNames() throws JavaEE6Exception
+    {
+        return findJobPersonDAO.findAllCompanyNames();
     }
     //endregion
 }
